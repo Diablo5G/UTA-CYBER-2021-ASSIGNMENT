@@ -332,9 +332,9 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 ---
 
-### Submission Guidelines
+### Submission File
 
-* Save the file where you documented your solutions and submit it as your homework deliverable. 
+* [Homework Submission File](./Solutions-Web-Development.md) 
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
