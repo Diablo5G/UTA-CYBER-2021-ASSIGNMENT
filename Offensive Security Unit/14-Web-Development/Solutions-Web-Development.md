@@ -526,10 +526,24 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 - [SQL DELETE Statement](https://365datascience.com/tutorials/sql-tutorials/sql-delete-statement), From 365 Data Science  
 
 ---
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
+### Citations and References:
+
+#### General Resources:
+
+- [`elk-docker` Container Documentation](https://elk-docker.readthedocs.io/)
+- [Elastic.co: The Elastic Stack](https://www.elastic.co/elastic-stack)
+- [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html)
+- [`elk-docker` Image Documentation](https://elk-docker.readthedocs.io/#elasticsearch-logstash-kibana-elk-docker-image-documentation)
+- [Virtual Memory Documentation](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/vm-max-map-count.html#vm-max-map-count)
+- [Docker Commands Cheatsheet](https://phoenixnap.com/kb/list-of-docker-commands-cheat-sheet)
+
+#### Web Development Documentation:
+
+- [HTTP Reference Sheet](./HTTP_Reference.md)
+- [curl Reference Sheet](./cURL_Reference.md)
+
+#### Special thanks:
+- © Trilogy Education Services, a 2U, Inc., Instructor Jerry and TAs; Matt, Jansen, Micheal. 
+- © The University of Texas at Austin Boot Camp, The Cybersecurity program. 
 
 ---
-:sunglasses: `Ketan Vithal Patel` :sunglasses:
-==============================================
-### `Monday, June 28, 2021 -- UofT Cybersecurity - Boot Camp`
-#### :rose::rose:`Jai Shri Swaminarayan`:rose::rose:
