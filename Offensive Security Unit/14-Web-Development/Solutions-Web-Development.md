@@ -404,7 +404,7 @@ Create two new users: Amanda and Ryan.
     - Confirm Password: Check the box to confirm use of weak password.
     - Role: `Administrator`  
   
-  ![User Amanda Created](/Images/create%20the%20new%20user%20named%20Amanda.PNG)  
+![User Amanda Created](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/User%20Amanda%20Created.png)  
 
 5. Create another user named Ryan.
 
@@ -417,7 +417,7 @@ Create two new users: Amanda and Ryan.
     - Confirm Password: Check the box to confirm use of weak password.
     - Role: `Editor`  
 
-   ![User Ryan Created](/Images/create%20the%20new%20user%20named%20Ryan.PNG)
+![User Ryan Created](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/User%20Ryan%20Created.png)
 
 7. Log out and log in with the following credentials:
 
@@ -430,15 +430,15 @@ For these "baselining" steps, you'll want to log into two different types of acc
 
 1. Using your browser, log into your WordPress site as your sysadmin account and navigate to `localhost:8080/wp-admin/users.php`, where we previously created the user Ryan. Examine this page briefly. Log out.
 
-   ![All Users under sysadmin - log in](/Images/All%20users.PNG)
+![All Users-login](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/All%20Users-login.png)
 
 2. Using your browser, log into your Ryan account and attempt to navigate to `localhost:8080/wp-admin/index.php`. Note the wording on your Dashboard.
 
-   ![Ryan's Page](/Images/Ryan%20indexdotphp.PNG)
+![Ryan's Page](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/Ryan's%20Page.png)
 
 3. Attempt to navigate to `localhost:8080/wp-admin/users.php`. Note what you see now.
 
-   ![Users screen under Ryan's log in](/Images/With%20Ryan%20logged%20in%20-%20navigating%20to%20localhostcolon8080-wp-admin-usersdotphp.PNG)
+![Users screen under Ryan's log in](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/Users%20screen%20under%20Ryan's%20log%20in.png)
 
 Log out in the browser.
 
@@ -449,7 +449,7 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 1. Construct a `curl` request that enters two forms: `"log={username}"` and `"pwd={password}"` and goes to `http://localhost:8080/wp-login.php`. Enter Ryan's credentials where there are placeholders.
 
    - curl -L -D cookie2.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" http://localhost:8080/wp-login.php  
-    ![Cookie2](/Images/cookie2dottxt.PNG)  
+    ![Cookie_test_1](/Images/Cookie_test_1.png)  
     
    - **Question:** Did you see any obvious confirmation of a login? (Y/N) None on the Webpage - however there was code confirmation in the terminal.
       - **`YES`**  
