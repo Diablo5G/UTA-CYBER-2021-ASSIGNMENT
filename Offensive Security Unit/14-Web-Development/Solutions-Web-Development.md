@@ -45,21 +45,12 @@
 
 4. What are the three parts of an HTTP response?
     
-    * **ANS:** Status Line - describing the message  
-    * **ANS:** Header - containing attributes  
-    * **ANS:** Body, optional - containing data   
-        * An Example of HTTP Response:  
-           ````
-           HTTP/1.1 200 OK
-           Date: Mon, 27 Jul 2009 12:28:53 GMT
-           Server: Apache/2.2.14 (Win32)
-           Last-Modified: Wed, 22 Jul 2009 19:15:56 GMT
-           Content-Length: 88
-           Content-Type: text/html
-           Connection: Closed
-           ````  
+    * **ANS:** 
+      *  A status line - the first line in the response message.
+      *  A series of HTTP headers, or header fields - The HTTP headers for a server's response contain information that a client can use to find out more about the response, and about the server that sent it  
+      *  A message body, which is usually needed - the message body contains either the resource requested by the client, or some information about the status of the action requested by the client.   
     
-          ![Three parts of an HTTP message](/Images/httpatomoreillycomsourceoreillyimages96872.png)  
+          ![HTTP_ResponseMessageExample](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/HTTP_ResponseMessageExample.png)  
           
 5. Which number class of status codes represents errors?  
     
@@ -123,8 +114,9 @@ Answer the following questions about `curl`:
 
 14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?  
     
-    * **ANS:** `GET` request because attacker could requests data from a server to figure out which HTTP requests that an HTTP server server will accept.
-    * **ANS:** `Options` is another request method that the attacker might figure out since it lists out the communication options for target resource.  
+    * **ANS:** 
+      * `GET` request because attacker could requests data from a server to figure out which HTTP requests that an HTTP server server will accept.
+      * `Options` is another request method that the attacker might figure out since it lists out the communication options for target resource.  
 
 #### Sessions and Cookies
 
@@ -230,10 +222,11 @@ X-XSS-Protection: 1; mode=block
 
 25. If your class covered security headers, what security request headers have been included?  
     
-    * **ANS:** HTTP Strict Transport Security (HSTS) - `Strict-Transport-Security:` max-age=31536000; includeSubDomains
-    * **ANS:** X-Content-Type-Options HTTP - `X-Content-Type:` NoSniff  
-    * **ANS:** X-Frame-Options HTTP - `X-Frame-Options:` DENY  
-    * **ANS:** Cross Site Scripting Protection (X-XSS) - `X-XSS-Protection:` 1; mode=block
+    * **ANS:** 
+      * HTTP Strict Transport Security (HSTS) - `Strict-Transport-Security:` max-age=31536000; includeSubDomains
+      *  X-Content-Type-Options HTTP - `X-Content-Type:` NoSniff  
+      *  X-Frame-Options HTTP - `X-Frame-Options:` DENY  
+      *  Cross Site Scripting Protection (X-XSS) - `X-XSS-Protection:` 1; mode=block
 
 
 #### Monoliths and Microservices
@@ -251,7 +244,7 @@ Answer the following questions about monoliths and microservices:
         6. Static Content 
         7. Management 
         8. Service Discovery
-        ![OptiSol Business Solutions](/Images/Microservice-architecture-766x370.png "8 Core Components of Microservice Architecture")  
+        ![Microservice-architecture](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/Microservice-architecture.png)  
 
 27. What is a service that writes to a database and communicates to other services?  
     
@@ -530,8 +523,8 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 #### General Resources:
 
-- [`elk-docker` Container Documentation](https://elk-docker.readthedocs.io/)
-- Indika. Difference Between IDS and IPS. Copyright © 2010-2018 Difference Between. [cited 2021 August 25]. Available from: https://bit.ly/38dUB1U 
+- Chua Hock-Chuan. [cited 2021 September 25]. Available from: [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html).
+- © OptiSol Business Solutions . [cited 2021 September 25]. Available from: [8 Core Components of Microservice Architecture](https://www.optisolbusiness.com/insight/8-core-components-of-microservice-architecture).
 - Erations : Rest UFW to defaults on Ubuntu or Linux. © 2021 RichardWalz.com | All rights reserved. [cited 2021 August 26]. Available from: https://bit.ly/3ymOUt7 
 
 #### Web Development Documentation:
