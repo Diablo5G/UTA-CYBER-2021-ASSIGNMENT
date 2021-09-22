@@ -235,16 +235,17 @@ Answer the following questions about monoliths and microservices:
 
 26. What are the individual components of microservices called?  
     
-    * **ANS:** There are 8 core components of microservices, they are called _`Services`_:   
-        1. Clients 
-        2. Identity Providers 
-        3. API Gateway 
-        4. Messaging Formats 
-        5. Databases 
-        6. Static Content 
-        7. Management 
-        8. Service Discovery
-        ![Microservice-architecture](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/Microservice-architecture.png)  
+    * **ANS:** There are 8 core components of microservices, they are called _`Services`:   
+       1. Clients 
+       2. Identity Providers 
+       3. API Gateway 
+       4. Messaging Formats 
+       5. Databases 
+       6. Static Content 
+       7. Management 
+       8. Service Discovery
+
+![Microservice-architecture](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/Microservice-architecture.png)  
 
 27. What is a service that writes to a database and communicates to other services?  
     
