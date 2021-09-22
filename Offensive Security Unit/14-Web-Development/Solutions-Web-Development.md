@@ -531,11 +531,8 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 #### General Resources:
 
 - [`elk-docker` Container Documentation](https://elk-docker.readthedocs.io/)
-- [Elastic.co: The Elastic Stack](https://www.elastic.co/elastic-stack)
-- [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html)
-- [`elk-docker` Image Documentation](https://elk-docker.readthedocs.io/#elasticsearch-logstash-kibana-elk-docker-image-documentation)
-- [Virtual Memory Documentation](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/vm-max-map-count.html#vm-max-map-count)
-- [Docker Commands Cheatsheet](https://phoenixnap.com/kb/list-of-docker-commands-cheat-sheet)
+- Indika. Difference Between IDS and IPS. Copyright © 2010-2018 Difference Between. [cited 2021 August 25]. Available from: https://bit.ly/38dUB1U 
+- Erations : Rest UFW to defaults on Ubuntu or Linux. © 2021 RichardWalz.com | All rights reserved. [cited 2021 August 26]. Available from: https://bit.ly/3ymOUt7 
 
 #### Web Development Documentation:
 
