@@ -448,23 +448,23 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 
 1. Construct a `curl` request that enters two forms: `"log={username}"` and `"pwd={password}"` and goes to `http://localhost:8080/wp-login.php`. Enter Ryan's credentials where there are placeholders.
 
-   - curl -L -D cookie2.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" http://localhost:8080/wp-login.php  
-    ![Cookie_test_1](/Images/Cookie_test_1.png)  
+- `curl -L -D cookie_test_1.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" http://localhost:8080/wp-login.php`  
+    ![Cookie_test_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/Cookie_test_1.png)  
     
-   - **Question:** Did you see any obvious confirmation of a login? (Y/N) None on the Webpage - however there was code confirmation in the terminal.
-      - **`YES`**  
-      https://github.com/karma-786/Week-14-Homework-Web-Development/blob/main/curl%20for%20Ryan%20credentials.txt
+- **Question:** Did you see any obvious confirmation of a login? (Y/N) None on the Webpage - however there was code confirmation in the terminal.
+      * **ANS:** Yes  
+      [code confirmation](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Resources/curl_Ryan_credentials.txt)
 
 2. Construct the same `curl` request, but this time add the option and path to save your cookie: `--cookie-jar ./ryancookies.txt`. This option tells `curl` to save the cookies to the `ryancookies.txt` text file.  
 
-   - curl -L -D cookie2.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" --cookie-jar ./ryancookies.txt http://localhost:8080/wp-login.php
+- `curl -L -D cookie2.txt -d "log=Ryan&pwd=123456&testcookie=1&rememberme=forever" --cookie-jar ./ryancookies.txt http://localhost:8080/wp-login.php`
 
 3. Read the contents of the `ryancookies.txt` file.
    
-   ![ryancookies](/Images/Ryancookies.PNG)
+![ryancookies](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/ryancookies.png)
 
-   - **Question:** How many items exist in this file?  
-      - ***`There are 3`***
+- **Question:** How many items exist in this file?  
+      * **ANS:** There are three.
 
 Note that each one of these is a cookie that was granted to Ryan after logging in.
 
@@ -472,28 +472,28 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 1. Craft a new `curl` command that now uses the `--cookie` option, followed by the path to your cookies file. For the URL, use `http://localhost:8080/wp-admin/index.php`.
 
-   - curl -L --cookie cookie2.txt http://localhost:8080/wp-admin/index.php
+- `curl -L --cookie cookie_test_1.txt http://localhost:8080/wp-admin/index.php`
 
 - **Question:** Is it obvious that we can access the Dashboard? (Y/N)
-   - **`No`**  
+      * **ANS:** No  
 
 2. Press the up arrow on your keyboard to run the same command, but this time, pipe `| grep Dashboard` to the end of your command to return all instances of the word `Dashboard` on the page.
 
-   - curl -L --cookie cookie2.txt http://localhost:8080/wp-admin/index.php | grep Dashboard
+- `curl -L --cookie cookie_test_1.txt http://localhost:8080/wp-admin/index.php | grep Dashboard`
 
 - **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) If so, you should be successfully logged in to your Editor's dashboard.
 
-   ![Dashboard](/Images/dashboard.PNG)
+      * **ANS:** Yes ![grep Dashboard](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/grep%20Dashboard.png)
 
 #### Step 5: Test the Users.php Page
 
 1. Finally, write a `curl` command using the same `--cookie ryancookies.txt` option, but attempt to access `http://localhost:8080/wp-admin/users.php`.
 
-   - curl -L --cookie ./ryancookies.txt http://localhost:8080/wp-admin/index.php | grep Dashboard
+- `curl -L --cookie ./ryancookies.txt http://localhost:8080/wp-admin/index.php | grep Dashboard`
 
-    - **Question:** What happens this time?
+- **Question:** What happens this time?
 
-      ***`Same as sysadmin Dashboard`***
+      * **ANS:** Same as sysadmin Dashboard
 
 ---
 
@@ -524,8 +524,8 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 #### General Resources:
 
-- Chua Hock-Chuan. [cited 2021 September 25]. Available from: [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html).
-- © OptiSol Business Solutions . [cited 2021 September 25]. Available from: [8 Core Components of Microservice Architecture](https://www.optisolbusiness.com/insight/8-core-components-of-microservice-architecture).
+- Chua Hock-Chuan. [cited 2021 September 22]. Available from: [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html).
+- © OptiSol Business Solutions . [cited 2021 September 22]. Available from: [8 Core Components of Microservice Architecture](https://www.optisolbusiness.com/insight/8-core-components-of-microservice-architecture).
 - Erations : Rest UFW to defaults on Ubuntu or Linux. © 2021 RichardWalz.com | All rights reserved. [cited 2021 August 26]. Available from: https://bit.ly/3ymOUt7 
 
 #### Web Development Documentation:
@@ -533,8 +533,5 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 - [HTTP Reference Sheet](./HTTP_Reference.md)
 - [curl Reference Sheet](./cURL_Reference.md)
 
-#### Special thanks:
-- © Trilogy Education Services, a 2U, Inc., Instructor Jerry and TAs; Matt, Jansen, Micheal. 
-- © The University of Texas at Austin Boot Camp, The Cybersecurity program. 
 
 ---
