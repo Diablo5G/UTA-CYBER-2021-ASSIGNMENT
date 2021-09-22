@@ -11,7 +11,7 @@
     
 2. What are the different parts of an HTTP request? 
     
-    * **ANS:** `The Request Line:` is the very first line in an HTTP request. The combination of three parts forms it**
+    * **ANS:** The Request Line is the very first line in an HTTP request. The combination of three parts forms it
         * The HTTP method used
         * The request URI
         * The HTTP protocol version
@@ -25,7 +25,7 @@
                Connection: Keep-Alive
                ````
     
-    * **ANS:** `The Request Header:` is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response.
+    * **ANS:** The Request Header is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response.
         * Example: from above
            ````
            Accept-Language: en-us
@@ -33,7 +33,7 @@
            Connection: Keep-Alive
            ````
     
-    * **ANS:** `The Request Body:` is data sent by the client to your API. A response body is the data your API sends to the client.
+    * **ANS:** The Request Body is data sent by the client to your API. A response body is the data your API sends to the client.
         * Example: Request Body (HTML)
            ````
            Hello World!
@@ -41,7 +41,7 @@
            
 3. Which part of an HTTP request is optional?
     
-    * **ANS:** `The Request Body` is optional 
+    * **ANS:** The Request Body is optional 
 
 4. What are the three parts of an HTTP response?
     
