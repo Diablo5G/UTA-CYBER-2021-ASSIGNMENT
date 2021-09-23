@@ -7,22 +7,28 @@
 
 1. What type of architecture does the HTTP request and response process occur in?  
 
-    * **ANS:** Client-Server Architecture, which takes part in OSI layer 7 (the application layer).  
+    * **ANS:** HTTP is based on the client-server architecture model and a stateless request/response protocol that operates by exchanging messages across a reliable TCP/IP connection (the application layer). 
     
 2. What are the different parts of an HTTP request? 
     
     * **ANS:** The Request Line is the very first line in an HTTP request. The combination of three parts forms it
-        * The HTTP method used
-        * The request URI
-        * The HTTP protocol version
+        * Request Method
+        * Request-Line
+        * Request URI
+        * Request Header Fields
             * Example:   
                ````
-               GET /hello.html HTTP/1.1
+               POST /cgi-bin/process.cgi HTTP/1.1
                User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
-               Host: www.example.com
+               Host: www.tutorialspoint.com
+               Content-Type: text/xml; charset=utf-8
+               Content-Length: length
                Accept-Language: en-us
                Accept-Encoding: gzip, deflate
                Connection: Keep-Alive
+
+               <?xml version="1.0" encoding="utf-8"?>
+               <string xmlns="http://clearforest.com/">string</string>
                ````
     
     * **ANS:** The Request Header is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response.
@@ -498,8 +504,7 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 ---
 
 ### References
-
-- Gunjan Kaushik: [What is HTTP Request?](https://www.toolsqa.com/client-server/http-request/), April 10, 2021 on ToolQA  
+  
 - 2005-2021 Mozilla and individual contributors: [Search results for: HTTP](https://developer.mozilla.org/en-US/search?q=HTTP) MDN Web Docs.
 - Error Codes: [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes# "List of HTTP status codes") Wikipedia, the free encyclopedia, Last edited on June 15, 2021, at 23:48 (UTC).  
 -  OWASP, Open Web Application Security Project: [Test HTTP Methods](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods)  
@@ -526,7 +531,7 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 - Chua Hock-Chuan. [cited 2021 September 22]. Available from: [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html).
 - © OptiSol Business Solutions . [cited 2021 September 22]. Available from: [8 Core Components of Microservice Architecture](https://www.optisolbusiness.com/insight/8-core-components-of-microservice-architecture).
-- Erations : Rest UFW to defaults on Ubuntu or Linux. © 2021 RichardWalz.com | All rights reserved. [cited 2021 August 26]. Available from: https://bit.ly/3ymOUt7 
+- HTTP Tutorial. Tutorials Point India Limited. [cited 2021 September 22]. Available from: [Tutorials Point](https://www.tutorialspoint.com/http/http_requests.htm) 
 
 #### Web Development Documentation:
 
