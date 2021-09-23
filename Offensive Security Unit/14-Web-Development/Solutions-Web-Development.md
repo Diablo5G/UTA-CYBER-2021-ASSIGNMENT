@@ -11,11 +11,12 @@
     
 2. What are the different parts of an HTTP request? 
     
-    * **ANS:** The Request Line is the very first line in an HTTP request. The combination of three parts forms it
+    * **ANS:** An HTTP client sends an HTTP request to a server in the form of a request message which includes following format:
         * Request Method
         * Request-Line
         * Request URI
         * Request Header Fields
+        
             * Example:   
                ````
                POST /cgi-bin/process.cgi HTTP/1.1
@@ -31,15 +32,15 @@
                <string xmlns="http://clearforest.com/">string</string>
                ````
     
-    * **ANS:** The Request Header is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response.
-        * Example: from above
+    * The Request Header Fields is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response.
+        * Example: Request Header Fields
            ````
            Accept-Language: en-us
            Accept-Encoding: gzip, deflate
            Connection: Keep-Alive
            ````
     
-    * **ANS:** The Request Body is data sent by the client to your API. A response body is the data your API sends to the client.
+    * The Request Body is data sent by the client to your API. A response body is the data your API sends to the client.
         * Example: Request Body (HTML)
            ````
            Hello World!
