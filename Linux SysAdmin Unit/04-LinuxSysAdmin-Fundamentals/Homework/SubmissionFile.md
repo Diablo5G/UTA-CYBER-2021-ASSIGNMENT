@@ -78,4 +78,7 @@
     - Screenshot of end of sample output:
 
 ---
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+**Submission File:** available at [Linux Systems Administration](https://docs.google.com/document/d/e/2PACX-1vT9wpjrXnQT2TeLj_sFS3iCseqvGvUAZfz0dGkWgg4SelxD3W7OL8aW71bA40WxGcv7uvRI9EVUjbrf/pub)
+
+---
