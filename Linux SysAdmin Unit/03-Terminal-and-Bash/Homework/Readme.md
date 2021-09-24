@@ -175,4 +175,10 @@ Complete the following tasks:
 
 ---
 
+### Submission File
+
+* [Homework Submission File](./Solutions-Terminal-and-Bash.md) 
+
+---
+
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
