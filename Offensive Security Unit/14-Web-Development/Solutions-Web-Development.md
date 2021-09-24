@@ -70,7 +70,7 @@
     
     * **ANS:** 400 codes indicate client errors  -- [400 Client Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_client_errors)
     
-    * **ANS:** 500 codes indicate server errors  -- [500 Server Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_server_errors)  
+               500 codes indicate server errors  -- [500 Server Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_server_errors)  
 
 6. What are the two most common request `methods` that a security professional will encounter?  
     
