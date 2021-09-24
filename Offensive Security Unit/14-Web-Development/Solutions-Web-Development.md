@@ -32,19 +32,26 @@
                <string xmlns="http://clearforest.com/">string</string>
                ````
     
-    * The Request Header Fields is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response.
+    * The request method indicates the method to be performed on the resource identified by the given Request-URI. The method is case-sensitive and should always be mentioned in uppercase.
+        * Example: The Request Method
+           ````
+               POST /cgi-bin/process.cgi HTTP/1.1
+           ````
+A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+
+   * The Request-Line begins with a method token, followed by the Request-URI and the protocol version, and ending with CRLF. The elements are separated by space SP characters.
+        * Example: The Request-Line
+           ````
+               Request-Line = Method SP Request-URI SP HTTP-Version CRLF
+           ````
+
+   * The Request Header Fields is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response.
         * Example: Request Header Fields
            ````
-           Accept-Language: en-us
-           Accept-Encoding: gzip, deflate
-           Connection: Keep-Alive
-           ````
-    
-    * The Request Body is data sent by the client to your API. A response body is the data your API sends to the client.
-        * Example: Request Body (HTML)
-           ````
-           Hello World!
-           ````  
+               Accept-Language: en-us
+               Accept-Encoding: gzip, deflate
+               Connection: Keep-Alive
+           ````    
            
 3. Which part of an HTTP request is optional?
     
@@ -445,5 +452,8 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 - [HTTP Reference Sheet](./HTTP_Reference.md)
 - [curl Reference Sheet](./cURL_Reference.md)
 
+#### Special thanks:
+© Trilogy Education Services, a 2U, Inc., Instructor Jerry and TAs; Matt, Jansen, Micheal.
+© The University of Texas at Austin Boot Camp, The Cybersecurity program.
 
 ---
