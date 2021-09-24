@@ -453,7 +453,7 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 - [curl Reference Sheet](./cURL_Reference.md)
 
 #### Special thanks:
-© Trilogy Education Services, a 2U, Inc., Instructor Jerry and TAs; Matt, Jansen, Micheal.
-© The University of Texas at Austin Boot Camp, The Cybersecurity program.
+ © Trilogy Education Services, a 2U, Inc., Instructor Jerry and TAs; Matt, Jansen, Micheal.
+ © The University of Texas at Austin Boot Camp, The Cybersecurity program.
 
 ---
