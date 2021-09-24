@@ -68,9 +68,9 @@
           
 5. Which number class of status codes represents errors?  
     
-    * **ANS:** 400 codes indicate client errors  -- [400 Client Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_client_errors)
-    
-               500 codes indicate server errors  -- [500 Server Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_server_errors)  
+    * **ANS:** 
+         * 400 codes indicate client errors  -- [400 Client Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_client_errors)
+         * 500 codes indicate server errors  -- [500 Server Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_server_errors)  
 
 6. What are the two most common request `methods` that a security professional will encounter?  
     
@@ -147,7 +147,7 @@ Answer the following questions about sessions and cookies:
     Set-Cookie: cart=Bob
     ```  
     
-    * **_The `set-cookie` sends the `cookie` to the client, which the cookie sent in `cart=Bob`._**
+    * The `set-cookie` sends the `cookie` to the client, which the cookie sent in `cart=Bob`.
 
 16. Which request header will continue the client's session?
 
@@ -263,7 +263,7 @@ Answer the following questions about monoliths and microservices:
 
 27. What is a service that writes to a database and communicates to other services?  
     
-   * **ANS:** `API`: Application Programming Interface 
+    * **ANS:** `API`: Application Programming Interface 
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?  
     
