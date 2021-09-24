@@ -264,6 +264,14 @@ Provide the following:
 
 - **Deliverable for Bonus Task 5:** Submit a screenshot of the contents of one of your transcribed PowerShell logs or a copy of one of the logs.
 
+
+---
+
+**Submission File:** available at 
+
+* [ ] [Solutions-A Day in the Life of a Windows Sysadmin](https://docs.google.com/document/d/e/2PACX-1vQOfjKqaM649q7UBvAptm3hZgzJXYGYSGQNzANfHf1jZ7tyaCxuxiyRDc_YR5byafrKhkpR-I9JjUZB/pub)
+
+
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
