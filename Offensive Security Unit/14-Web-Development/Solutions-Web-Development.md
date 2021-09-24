@@ -37,7 +37,7 @@
            ````
                POST /cgi-bin/process.cgi HTTP/1.1
            ````
-A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+      A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
 
    * The Request-Line begins with a method token, followed by the Request-URI and the protocol version, and ending with CRLF. The elements are separated by space SP characters.
         * Example: The Request-Line
