@@ -296,86 +296,6 @@ Answer the following questions about multi-container deployment:
 
 ---
 
-### Bonus Challenge Overview: The Cookie Jar
-
-For this challenge, you'll once again be using `curl`, but this time to manage and swap sessions.
-
-:warning: **Heads Up**: You'll need to have WordPress set up from the Swapping Sessions activity from Day 1 of this unit. If you have not done it or it is improperly set up, please refer to the Day 1 student guide and the Swapping Sessions activity file.
-
-If you recall, on Day 1 of this unit you used Google Chrome's Cookie-Editor extension to swap sessions and cookies. For this homework challenge, we'll be using the command-line tool `curl` to practice swapping cookie and sessions within the WordPress app.
-
-It is important for cybersecurity professionals to know how to manage cookies with `curl`:
-
-- Web application security engineers need to regularly ensure cookies are both functional and safe from tampering.
-
-  - For example, you might need to request a cookie from a webpage and then test various HTTP responses using that cookie. Doing this over and over through the browser is tedious, but can be automated with scripts.
-
-- The same concept applies for penetration testers and hackers: `curl` is used to quickly save a cookie in order to test various exploits.
-
-  - For example, an HTTP server may be configured so that, in order to POST data to specific pages, clients need to have cookies or authentication information set in their request headers, which the server will verify.
-
-#### Revisiting curl
-
-Recall that you used `curl` to craft different kinds of requests for your `curl` activity, and that you saw how to use the Chrome extension Cookie-Editor to export and import cookies and swap sessions.
-
-There will be many systems in which you will need to test requests and cookies that will not connect to a browser or browser extension. 
-
-`curl` not only allows users to look through headers, send data, and authenticate to servers, but also to save and send cookies through two `curl` options: `--cookie-jar` and `--cookie`.
-
-These two options work exactly like Cookie-Editor, but on the command line. 
-
-- `--cookie-jar` allows a curl user to save the cookies set within a response header into a text file.
-
-- `--cookie` allows a user to specify a text file where a cookie is saved, in order to send a request with the cookies embedded in the request header.
-
-Let's look at how we can create a `curl` command that will log into a web page with a supplied username and password, and also save the server's response that should contain a cookie.
-
-#### Logging In and Saving Cookies with Curl
-
-If we want to use the `curl` command to log into an account, `Amanda`, with the password `password`, we use the following `curl` options:
-
-- `curl --cookie-jar ./amandacookies.txt --form "log=Amanda" --form "pwd=password" http://localhost:8080/wp-login.php --verbose`
-- `curl`: The tool that we are using.
-  
-- `--cookie-jar`: Specifies where we will save the cookies.
-  
-- `./amandacookies.txt`: Location and file where the cookies will be saved.
-  
-- `--form`: Lets us pick the login username and password forms that we set in our user info earlier. In this case it's our username.
-  
-- `log=Amanda`: How WordPress understands and accepts usernames.
-  
-- `--form`: Lets us pick the login username and password forms that we set in our user info earlier. In this case it's our password.
-  
-- `pwd=password`: How WordPress understands and accepts passwords.
-  
-- `http://localhost:8080/wp-login.php`: Our WordPress login page.
-  
-- `--verbose`: Outputs more specific description about the actions the command is taking.  
-
-Run the command:  `curl --cookie-jar ./amandacookies.txt --form "log=Amanda" --form "pwd=password" http://localhost:8080/wp-login.php --verbose`
-
-If the site confirms our credentials, it will give us a cookie in return, which `curl` will save in the cookie jar file `./amandacookies.txt`.
-
-Now let's look at how to use that saved cookie on a page that requires us to be logged in.
-
-#### Using a Saved Cookie
-
-To use a saved cookie, we use the following `curl` syntax:
-
-- `curl --cookie ./amandacookies.txt http://localhost:8080/wp-admin/users.php`
-  - `curl`: The tool that we are using.
-    
-  - `--cookie`: Precedes the location of our saved cookie that we want to use.
-    
-  - `./amandacookies.txt`: Location and file where the cookies are saved.
-    
-  - `http://localhost:8080/wp-admin/users.php`: A page that requires authentication to see properly. Note that we are not going to the login page, because supplying a cookie in this instance assumes that we are already logged in.
-
-Now that we know how to use the `curl` cookie jar, let's look at what we need to do for this challenge.
-
----
-
 ### Bonus Challenge Instructions: The Cookie Jar
 
 First, using Docker Compose, navigate to the Day 1 WordPress activity directory and bring up the container set:
@@ -504,35 +424,21 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 ---
 
-### References
-  
-- 2005-2021 Mozilla and individual contributors: [Search results for: HTTP](https://developer.mozilla.org/en-US/search?q=HTTP) MDN Web Docs.
-- Error Codes: [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes# "List of HTTP status codes") Wikipedia, the free encyclopedia, Last edited on June 15, 2021, at 23:48 (UTC).  
--  OWASP, Open Web Application Security Project: [Test HTTP Methods](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods)  
-- [HTTP Request Methods](https://www.w3schools.com/tags/ref_httpmethods.asp), On W3Schools  
-- Burak Guzel: [HTTP Headers for Dummies](https://code.tutsplus.com/tutorials/http-headers-for-dummies--net-8039), On ENVATO TUTS+ May 12, 2021  
-- Goran Aviani: [An introduction to HTTP: everything you need to know](https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/), On freeCodeCamp SEPTEMBER 11, 2019 / #PROGRAMMING
-- WEB HOSTING: [What is curl?](https://blog.pair.com/2018/01/26/curl-description-basic-use-cases/ "What is curl?"), On Pair, January 26, 2018
-- Bagder: [Modify the HTTP request](https://everything.curl.dev/http/requests), On Everything curl, Last updated 3 months ago
-- Michael Kerrisk, author of The Linux Programming Interface, maintainer of the Linux man-pages project.: [Curl Manual](https://man7.org/linux/man-pages/man1/curl.1.html), curl(1) - Linux manual page - HTML rendering created June 20, 2021 - Hosting by [jambit GmbH.](https://www.jambit.com/index_en.html)
-- [HTTP request smuggling](https://portswigger.net/web-security/request-smuggling), On PortSwigger  
-- Authored by Ziyahan Albeniz, Reviewed by Sven Morgenroth, Translated by Umran Yildirimkaya: [HTTP Security Headers and How They Work](https://www.netsparker.com/whitepaper-http-security-headers/), On Netsparker by Invicti (White Paper)  
-- Jay Thakkar: [HTTP Security Headers: 5 Headers You Must Implement on Your Site](https://www.thesslstore.com/blog/http-security-headers/), On The SSL Store, April 2, 2018  
-- [8 Core Components of Microservice Architecture](https://www.optisolbusiness.com/insight/8-core-components-of-microservice-architecture), On OptiSol Business Solutions, August 3, 2020  
-- [Use Docker Compose to deploy multiple containers](https://docs.microsoft.com/en-us/azure/cognitive-services/containers/docker-compose-recipe), From Microsoft October 29, 2020  
-- Tony Bradley: [The challenges of scaling microservices](https://techbeacon.com/app-dev-testing/challenges-scaling-microservices), On TechBeacon  
-- Document ahux in the Knowledge Base.: [SQL example statements for retrieving data from a table](https://kb.iu.edu/d/ahux), On UITS Last modified on March 13, 2020 @ 15:36:50.  
-- ADRIENNE WATT & NELSON ENG: [Chapter 16 SQL Data Manipulation Language](https://opentextbc.ca/dbdesign01/chapter/chapter-sql-dml/), On Pressbooks - Database Design - 2nd Edition  
-- [SQL DELETE Statement](https://365datascience.com/tutorials/sql-tutorials/sql-delete-statement), From 365 Data Science  
-
----
 ### Citations and References:
 
 #### General Resources:
 
 - Chua Hock-Chuan. [cited 2021 September 22]. Available from: [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html).
-- © OptiSol Business Solutions . [cited 2021 September 22]. Available from: [8 Core Components of Microservice Architecture](https://www.optisolbusiness.com/insight/8-core-components-of-microservice-architecture).
-- HTTP Tutorial. Tutorials Point India Limited. [cited 2021 September 22]. Available from: [Tutorials Point](https://www.tutorialspoint.com/http/http_requests.htm) 
+- OptiSol Business Solutions . [cited 2021 September 22]. Available from: [8 Core Components of Microservice Architecture](https://www.optisolbusiness.com/insight/8-core-components-of-microservice-architecture).
+- HTTP Tutorial. Tutorials Point India Limited. [cited 2021 September 22]. Available from: [Tutorials Point](https://www.tutorialspoint.com/http/http_requests.htm)
+- HTTP Request Methods. W3Schools by Refsnes Data Copyright 1999-2021. [cited 2021 September 22]. Available from: [W3Schools: HTTP Request Methods](https://www.w3schools.com/tags/ref_httpmethods.asp)
+- Command line options. © GitBook - 2021. [cited 2021 September 22]. Available from: [Everything curl: Command Line Options](https://everything.curl.dev/cmdline/options) 
+- HTTP Cookies. [cited 2021 September 22]. Available from: [curl Docs: HTTP Cookies](https://curl.se/docs/http-cookies.html)
+- curl.1 the man page. [cited 2021 September 22]. Available from: [curl Man Page: Cookie Option](https://curl.se/docs/manpage.html#-c)
+- Use Docker Compose to deploy multiple containers. © Microsoft 2021. [cited 2021 September 22]. Available from: [Use Docker Compose to deploy multiple containers](https://docs.microsoft.com/en-us/azure/cognitive-services/containers/docker-compose-recipe)
+- Tony Bradley. TechBeacon. [cited 2021 September 22]. Available from: [The challenges of scaling microservices](https://techbeacon.com/app-dev-testing/challenges-scaling-microservices).
+- SQL example statements for retrieving data from a table. © 2021 The Trustees of Indiana University. [cited 2021 September 22]. Available from: [SQL example statements for retrieving data from a table](https://kb.iu.edu/d/ahux).
+- SQL DELETE Statement. © 2021 365 Data Science. [cited 2021 September 22]. Available from: [SQL DELETE Statement](https://365datascience.com/tutorials/sql-tutorials/sql-delete-statement).
 
 #### Web Development Documentation:
 
