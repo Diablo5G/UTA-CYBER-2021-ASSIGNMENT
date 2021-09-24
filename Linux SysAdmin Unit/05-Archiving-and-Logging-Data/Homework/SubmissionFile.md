@@ -116,4 +116,8 @@ Save and submit the completed file for your homework submission.
     ```
 
 ---
+
+**Submission File:** available at [Archiving and Logging Data](https://docs.google.com/document/d/e/2PACX-1vSYf9YW4XkRfPcJuBTkcz3BhH_5j6hmNasoWngz3FRXevqkmmSPlZ2Vi7aFMzgPAOx2h0gl0rd4FkVM/pub)
+
+---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
