@@ -421,13 +421,13 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 #### Step 5: Test the Users.php Page
 
-1. Finally, write a `curl` command using the same `--cookie ryancookies.txt` option, but attempt to access `http://localhost:8080/wp-admin/users.php`.
+Finally, write a `curl` command using the same `--cookie ryancookies.txt` option, but attempt to access `http://localhost:8080/wp-admin/users.php`.
 
 - `curl -L --cookie ./ryancookies.txt http://localhost:8080/wp-admin/index.php | grep Dashboard`
 
 - **Question:** What happens this time?
 
-      * **ANS:** Same as sysadmin Dashboard
+      **ANS:** Same as sysadmin Dashboard
 
 ---
 
