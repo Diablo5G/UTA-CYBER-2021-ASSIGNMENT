@@ -409,13 +409,13 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 - `curl -L --cookie cookie_test_1.txt http://localhost:8080/wp-admin/index.php`
 
 - **Question:** Is it obvious that we can access the Dashboard? (Y/N)
-      * **ANS:** No  
+    * **ANS:** No  
 
 2. Press the up arrow on your keyboard to run the same command, but this time, pipe `| grep Dashboard` to the end of your command to return all instances of the word `Dashboard` on the page.
 
 - `curl -L --cookie cookie_test_1.txt http://localhost:8080/wp-admin/index.php | grep Dashboard`
 
-   - **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) If so, you should be successfully logged in to your Editor's dashboard.
+- **Question:** Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) If so, you should be successfully logged in to your Editor's dashboard.
 
     * **ANS:** Yes ![grep Dashboard](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/grep%20Dashboard.png)
 
@@ -425,9 +425,9 @@ Finally, write a `curl` command using the same `--cookie ryancookies.txt` option
 
 - `curl -L --cookie ./ryancookies.txt http://localhost:8080/wp-admin/index.php | grep Dashboard`
 
-   - **Question:** What happens this time?
+- **Question:** What happens this time?
 
-    * **ANS:** Same as sysadmin Dashboard
+    * **ANS:** Same as sysadmin dashboard
 
 ---
 
