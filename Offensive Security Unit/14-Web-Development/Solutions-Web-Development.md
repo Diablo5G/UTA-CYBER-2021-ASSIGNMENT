@@ -383,11 +383,11 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 1. Construct a `curl` request that enters two forms: `"log={username}"` and `"pwd={password}"` and goes to `http://localhost:8080/wp-login.php`. Enter Ryan's credentials where there are placeholders.
 
 - `curl -L -D cookie_test_1.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" http://localhost:8080/wp-login.php`  
+    
     ![Cookie_test_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/Cookie_test_1.png)  
     
 - **Question:** Did you see any obvious confirmation of a login? (Y/N) None on the Webpage - however there was code confirmation in the terminal.
-      * **ANS:** Yes  
-      [code confirmation](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Resources/curl_Ryan_credentials.txt)
+    * **ANS:** Yes [code confirmation](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Resources/curl_Ryan_credentials.txt)
 
 2. Construct the same `curl` request, but this time add the option and path to save your cookie: `--cookie-jar ./ryancookies.txt`. This option tells `curl` to save the cookies to the `ryancookies.txt` text file.  
 
@@ -417,7 +417,9 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 - **Question:** Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) If so, you should be successfully logged in to your Editor's dashboard.
 
-    * **ANS:** Yes ![grep Dashboard](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/grep%20Dashboard.png)
+    * **ANS:** Yes 
+
+![grep Dashboard](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/grep%20Dashboard.png)
 
 #### Step 5: Test the Users.php Page
 
