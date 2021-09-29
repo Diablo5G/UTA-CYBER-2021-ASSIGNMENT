@@ -310,7 +310,7 @@ When complete, submit the file on BCS.
 
 **Submission File:** available at 
 
-* [ ] [Solutions-Web-Vulnerabilities-and-Hardening](https://docs.google.com/document/d/e/2PACX-1vQOfjKqaM649q7UBvAptm3hZgzJXYGYSGQNzANfHf1jZ7tyaCxuxiyRDc_YR5byafrKhkpR-I9JjUZB/pub)
+* [ ] [Solutions-Web-Vulnerabilities-and-Hardening](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Solutions-Web%20Vulnerabilities%20and%20Hardening.md)
 
   
 ---
