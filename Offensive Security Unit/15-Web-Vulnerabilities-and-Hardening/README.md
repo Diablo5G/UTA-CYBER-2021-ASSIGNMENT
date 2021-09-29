@@ -305,6 +305,14 @@ When complete, submit the file on BCS.
     
 6. **Deliverable**: Take a screen shot confirming that this exploit was successfully executed and provide 2-3 sentences outlining mitigation strategies. 
 
+
+---
+
+**Submission File:** available at 
+
+* [ ] [Solutions-Web-Vulnerabilities-and-Hardening](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Solutions-Web%20Vulnerabilities%20and%20Hardening.md)
+
+  
 ---
 
 © 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
