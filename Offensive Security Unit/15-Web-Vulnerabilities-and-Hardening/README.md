@@ -305,6 +305,14 @@ When complete, submit the file on BCS.
     
 6. **Deliverable**: Take a screen shot confirming that this exploit was successfully executed and provide 2-3 sentences outlining mitigation strategies. 
 
+
+---
+
+**Submission File:** available at 
+
+* [ ] [Solutions-Web-Vulnerabilities-and-Hardening](https://docs.google.com/document/d/e/2PACX-1vQOfjKqaM649q7UBvAptm3hZgzJXYGYSGQNzANfHf1jZ7tyaCxuxiyRDc_YR5byafrKhkpR-I9JjUZB/pub)
+
+  
 ---
 
 © 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
