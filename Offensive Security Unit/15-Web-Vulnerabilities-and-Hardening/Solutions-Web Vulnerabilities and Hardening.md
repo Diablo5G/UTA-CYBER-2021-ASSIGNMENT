@@ -89,30 +89,34 @@
     * The web page should look like as the figure below. Click **here** to install bWapp.
 
     * After successfully installing bWapp, log in with the following credentials:
-      *    Usernmae: bee
-      *    Password: bug
+       - Username: bee
+       - Password: bug
+
 
     * To access the application where we will perform our activity, enter in the following URL: http://192.168.13.35/ba_insecure_login_1.php
     
     * On Firefox browser, make sure the FoxyProxy settings is set to **Burp**.
 
-![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
-   * This page is an administrative web application that serves as a simple login page. An administrator enters their username and password and selects Login:
-      * Usernmae: test-user
-      * Password: password
+![Web Application 2_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_1.png)
 
-![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
+
+    * This page is an administrative web application that serves as a simple login page. An administrator enters their username and password and selects Login:   
+       - Username: test-user
+       - Password: password
+
+![Web Application 2_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_2.png)
 
 * Following was displayed in the Burp Suite in **Proxy** tab under the Intercept - Highlighting the **Login and password** credentials.
-![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
+![Web Application 2_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_3.png)
 
 * From the web application tool Burp Suite, on the **Intercept** tab, right click anywhere to send the information to **Intruder** 
  
       *    Select the **Intruder** tab, and verify the Target tab
-![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
+![Web Application 2_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_4.png)
+![Web Application 2_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_5.png)
 
       *    Select the **Position** tab and change the attack type to **Cluster bomb**, also clear all payload positions, except for the login and password credentials.
-![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
+![Web Application 2_6](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_6.png)
 
 * We've been provided with a list of administrators and the breached passwords:
 * [ ] [List of Administrators](listofadmins.txt)
@@ -128,8 +132,7 @@
 #### How to conduct a brute force attack against a web application login page with the Burp Intruder function 
    
 * From the web application tool Burp Suite, on the **Intercept** tab, right click anywhere to send the information to **Intruder**  
-   
-      *    Select the **Intruder** tab, and verify the Target tab
+
 ![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
    
 - In the terminal, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/passwd`
