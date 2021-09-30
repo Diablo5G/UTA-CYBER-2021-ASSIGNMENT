@@ -113,11 +113,9 @@
       *    Select the **Position** tab and change the attack type to **Cluster bomb**, also clear all payload positions, except for the login and password credentials.
 ![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
 
-      *    We've been provided with a list of administrators and the breached passwords:
-
-            [ ]    List of Administrators
-
-            [ ]    Breached list of Passwords
+*    We've been provided with a list of administrators and the breached passwords:
+* [ ] [List of Administrators](listofadmins.txt)
+* [ ] [Breached list of Passwords](breached_passwords.txt)
 
 
 <details>
