@@ -116,7 +116,7 @@
 ![Web Application 2_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_4.png)
 ![Web Application 2_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_5.png)
 
-   -  Select the **Position** tab and change the attack type to **Cluster bomb**, also clear all payload positions, except for the login and password credentials.
+   -  Select the **Positions** tab and change the attack type to **Cluster bomb**, also **clear** all payload positions, except for the login and password credentials.
 
 ![Web Application 2_6](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_6.png)
 
@@ -133,18 +133,33 @@
 
 #### How to conduct a brute force attack against a web application login page with the Burp Intruder function 
    
-* From the web application tool Burp Suite, on the **Intercept** tab, right click anywhere to send the information to **Intruder**  
+* Select **Payloads** tab and enter the [List of Administrators](listofadmins.txt) file that provided above into the **Payload Options [Simple list]** for Payload set: 1  
 
-![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
+![Web Application 2_7](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_7.png)
    
-- In the terminal, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/passwd`
+- Add the password from the [Breached list of Passwords](breached_passwords.txt) file that provided above into the **Payload Options [Simple list]** for Payload set: 2  
    
-![Web Application 1_cat_passwd_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_cat_passwd_1.png)
-![Web Application 1_cat_passwd_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_cat_passwd_2.png)
+![Web Application 2_8](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_8.png)
 
-- On the same webpage, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/passwd`
+- Click the **Start** attack button to get the results.
    
-![Web Application 1_cat_passwd_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_4.png)
+![Web Application 2_9](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_9.png)
+
+- Results from the analysis that was complete from the Intruder show that there was one successful login username/password combination. It was user name of **" tonystark"** and the password **"I am Iron Man"**. Below snapshot displays the 
+   
+   ```
+   Successful login! You really are Iron Man :)
+   ```
+   
+![Web Application 2_10](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_10.png)
+![Web Application 2_11](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_11.png)
+   
+
+   
+   
+   
+   
+
    
 - In the terminal, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/hosts`
    
