@@ -75,3 +75,33 @@
 </details>
 
 ---
+
+---
+
+### Citations and References:
+
+#### General Resources:
+
+- Chua Hock-Chuan. [cited 2021 September 22]. Available from: [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html).
+- OptiSol Business Solutions . [cited 2021 September 22]. Available from: [8 Core Components of Microservice Architecture](https://www.optisolbusiness.com/insight/8-core-components-of-microservice-architecture).
+- HTTP Tutorial. Tutorials Point India Limited. [cited 2021 September 22]. Available from: [Tutorials Point](https://www.tutorialspoint.com/http/http_requests.htm)
+- HTTP Request Methods. W3Schools by Refsnes Data Copyright 1999-2021. [cited 2021 September 22]. Available from: [W3Schools: HTTP Request Methods](https://www.w3schools.com/tags/ref_httpmethods.asp)
+- Command line options. © GitBook - 2021. [cited 2021 September 22]. Available from: [Everything curl: Command Line Options](https://everything.curl.dev/cmdline/options) 
+- HTTP Cookies. [cited 2021 September 22]. Available from: [curl Docs: HTTP Cookies](https://curl.se/docs/http-cookies.html)
+- curl.1 the man page. [cited 2021 September 22]. Available from: [curl Man Page: Cookie Option](https://curl.se/docs/manpage.html#-c)
+- Use Docker Compose to deploy multiple containers. © Microsoft 2021. [cited 2021 September 22]. Available from: [Use Docker Compose to deploy multiple containers](https://docs.microsoft.com/en-us/azure/cognitive-services/containers/docker-compose-recipe)
+- Tony Bradley. TechBeacon. [cited 2021 September 22]. Available from: [The challenges of scaling microservices](https://techbeacon.com/app-dev-testing/challenges-scaling-microservices).
+- SQL example statements for retrieving data from a table. © 2021 The Trustees of Indiana University. [cited 2021 September 22]. Available from: [SQL example statements for retrieving data from a table](https://kb.iu.edu/d/ahux).
+- SQL DELETE Statement. © 2021 365 Data Science. [cited 2021 September 22]. Available from: [SQL DELETE Statement](https://365datascience.com/tutorials/sql-tutorials/sql-delete-statement).
+
+#### Web Development Documentation:
+
+- [HTTP Reference Sheet](./HTTP_Reference.md)
+- [curl Reference Sheet](./cURL_Reference.md)
+
+#### Special thanks:
+© Trilogy Education Services, a 2U, Inc., Instructor Jerry and TAs; Matt, Jansen, Micheal.
+
+© The University of Texas at Austin Boot Camp, The Cybersecurity program.
+
+---
