@@ -97,12 +97,10 @@
     * On Firefox browser, make sure the FoxyProxy settings is set to **Burp**.
 
 ![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
+   * This page is an administrative web application that serves as a simple login page. An administrator enters their username and password and selects Login:
+      * Usernmae: test-user
+      * Password: password
 
-
-* This page is an administrative web application that serves as a simple login page. An administrator enters their username and password and selects Login:
-
-      *    Usernmae: test-user
-      *    Password: password
 ![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
 
 * Following was displayed in the Burp Suite in **Proxy** tab under the Intercept - Highlighting the **Login and password** credentials.
