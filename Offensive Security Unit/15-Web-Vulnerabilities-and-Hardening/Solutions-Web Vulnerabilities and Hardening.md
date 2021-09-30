@@ -100,6 +100,7 @@
 
 
 * This page is an administrative web application that serves as a simple login page. An administrator enters their username and password and selects Login:
+
       *    Usernmae: test-user
       *    Password: password
 ![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
@@ -107,13 +108,15 @@
 * Following was displayed in the Burp Suite in **Proxy** tab under the Intercept - Highlighting the **Login and password** credentials.
 ![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
 
-* From the web application tool Burp Suite, on the **Intercept** tab, right click anywhere to send the information to **Intruder**  
+* From the web application tool Burp Suite, on the **Intercept** tab, right click anywhere to send the information to **Intruder** 
+ 
       *    Select the **Intruder** tab, and verify the Target tab
 ![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
+
       *    Select the **Position** tab and change the attack type to **Cluster bomb**, also clear all payload positions, except for the login and password credentials.
 ![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
 
-*    We've been provided with a list of administrators and the breached passwords:
+* We've been provided with a list of administrators and the breached passwords:
 * [ ] [List of Administrators](listofadmins.txt)
 * [ ] [Breached list of Passwords](breached_passwords.txt)
 
@@ -127,6 +130,7 @@
 #### How to conduct a brute force attack against a web application login page with the Burp Intruder function 
    
 * From the web application tool Burp Suite, on the **Intercept** tab, right click anywhere to send the information to **Intruder**  
+   
       *    Select the **Intruder** tab, and verify the Target tab
 ![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
    
