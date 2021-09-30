@@ -126,7 +126,7 @@
 
 
 <details>
-<summary> <b> Click here to view Design Command Injection Payloads. </b> </summary>
+<summary> <b> Click here to view How to conduct a brute force attack. </b> </summary>
 
 ---
 
@@ -145,11 +145,7 @@
    
 ![Web Application 2_9](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_9.png)
 
-- Results from the analysis that was complete from the Intruder show that there was one successful login username/password combination. It was user name of **" tonystark"** and the password **"I am Iron Man"**. Below snapshot displays the 
-   
-   ```
-   Successful login! You really are Iron Man :)
-   ```
+- Results from the analysis that was complete from the Intruder show that there was one successful login username/password combination. It was user name of **" tonystark"** and the password **"I am Iron Man"**. Below snapshot displays the successful login.
    
 ![Web Application 2_10](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_10.png)
 ![Web Application 2_11](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_11.png)
