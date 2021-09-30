@@ -14,7 +14,7 @@
       *    Password: password
 
     * Select the **Command Injection** or access this page directly http://192.168.13.25/vulnerabilities/exec/
-    * Entering the IP address `8.8.8.8` press Submit to see the results display on the web application.
+    * Entering the IP address `8.8.8.8` press **Submit** to see the results display on the web application.
 
 ![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
 
@@ -36,10 +36,19 @@
 
 #### How to manipulate the input to cause an unintended result 
    
+- In the terminal, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/passwd`
+   
+![Web Application 1_cat_passwd_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_cat_passwd_1.png)
+![Web Application 1_cat_passwd_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_cat_passwd_2.png)
+
 - On the same webpage, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/passwd`
    
-![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
+![Web Application 1_cat_passwd_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_4.png)
+   
+- In the terminal, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/hosts`
+   
+![Web Application 1_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_5.png)
 
-```bash
-ansible-playbook install-elk.yml
-```
+- On the web browser, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/hosts`
+   
+![Web Application 1_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_2.png)
