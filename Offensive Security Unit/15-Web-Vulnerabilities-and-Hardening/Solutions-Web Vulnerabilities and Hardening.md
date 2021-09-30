@@ -30,7 +30,7 @@
 
 
 <details>
-<summary> <b> Click here to view Payloads Configuration. </b> </summary>
+<summary> <b> Click here to view Design Command Injection Payloads. </b> </summary>
 
 ---
 
@@ -52,3 +52,26 @@
 - On the web browser, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/hosts`
    
 ![Web Application 1_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_5.png)
+   
+
+#### Mitigation Strategies
+
+1. **Input validation** is a method to validate the data input with a predefined logic, ensuring that the input is what the application is expecting. Input validation can be applied on the client-side or the server-side. For example,
+   
+|          | Function | Example    |
+|----------|----------|------------|
+| **Client-side**| Input validation involves coding the predefined logic into the webpage.                   | An input can only be chosen from a predefined drop-down menu.     |
+| **Server-side**| Input validation involves adding the predefined logic into the code on the web server.    | If a user enters a malicious SQL code and selects submit, then the web server will check and remove it after receiving this malicious input.     |
+
+2. **Avoid Command-Line Calls Altogether** The first prevention method you can do is avoiding command line calls. Because when we’re using command lines, it opens users to risk such as command injection. 
+   
+3. **Use Built-in APIs Instead of OS Commands** Another method is to shift from using Operating System (OS) commands to much-safer APIs, considering that most reputable APIs have built-in security measures. 
+   
+4. **Reject Unacceptable Code** We can also use server-level protection, which is blacklisting a set of codes. Simply by only allowing the codes we and our team built prevents any other code from accessing the server. Thus, creating a barrier between the malicious codes and the whole server.
+   
+5. **Escaping Shell Metacharacters** Also, to prevent any other characters and limit the output of commands, we can use escaping shell metacharacters. This method allows us to expressly grant access depending on the variables. Our developer can set these variables based on our needs.    
+   
+   
+</details>
+
+---
