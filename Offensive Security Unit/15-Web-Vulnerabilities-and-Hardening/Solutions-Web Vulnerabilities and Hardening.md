@@ -255,6 +255,25 @@ Now we are able to hook into Replicants website, so next we will attempt a coupl
    
 ![Web Application 3_10.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_10.png)   
    
+- Return to the BeEF control panel, in the center windows we'll see the module history command. Click that command to see the results in the last windows panel.
+   
+![Web Application 3_11.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_11.png)  
+   
+- As we saw, the username and password have been captured. Now we can try on another method as the following:
+   
+   - Social Engineering >> Pretty Theft
+
+![Web Application 3_12.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_12.png) 
+   
+![Web Application 3_13.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_13.png) 
+   
+![Web Application 3_14.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_14.png) 
+
+   - Social Engineering >> Fake Notification Bar
+![Web Application 3_15.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_15.png) 
+
+   - Host >> Get Geolocation (Third Party)
+![Web Application 3_16.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_16.png)
    
 #### Mitigation Strategies
 
