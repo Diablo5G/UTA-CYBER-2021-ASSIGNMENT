@@ -30,7 +30,7 @@
 
 
 <details>
-<summary> <b> Click here to view Payloads Configuration. </b> </summary>
+<summary> <b> Click here to view Design Command Injection Payloads. </b> </summary>
 
 ---
 
@@ -47,8 +47,143 @@
    
 - In the terminal, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/hosts`
    
-![Web Application 1_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_5.png)
+![Web Application 1_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_2.png)
 
 - On the web browser, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/hosts`
    
-![Web Application 1_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_2.png)
+![Web Application 1_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_5.png)
+   
+
+#### Mitigation Strategies
+
+1. **Input validation** is a method to validate the data input with a predefined logic, ensuring that the input is what the application is expecting. Input validation can be applied on the client-side or the server-side. For example,
+   
+|          | Function | Example    |
+|----------|----------|------------|
+| **Client-side**| Input validation involves coding the predefined logic into the webpage.                   | An input can only be chosen from a predefined drop-down menu.     |
+| **Server-side**| Input validation involves adding the predefined logic into the code on the web server.    | If a user enters a malicious SQL code and selects submit, then the web server will check and remove it after receiving this malicious input.     |
+
+2. **Avoid Command-Line Calls Altogether** The first prevention method you can do is avoiding command line calls. Because when we’re using command lines, it opens users to risk such as command injection. 
+   
+3. **Use Built-in APIs Instead of OS Commands** Another method is to shift from using Operating System (OS) commands to much-safer APIs, considering that most reputable APIs have built-in security measures. 
+   
+4. **Reject Unacceptable Code** We can also use server-level protection, which is blacklisting a set of codes. Simply by only allowing the codes we and our team built prevents any other code from accessing the server. Thus, creating a barrier between the malicious codes and the whole server.
+   
+5. **Escaping Shell Metacharacters** Also, to prevent any other characters and limit the output of commands, we can use escaping shell metacharacters. This method allows us to expressly grant access depending on the variables. Our developer can set these variables based on our needs.    
+   
+   
+</details>
+
+---
+
+
+## Web Application 2: A Brute Force to Be Reckoned With
+1.  Complete the following steps to walkthrough the intended purpose of the web application.
+    * Access Vagrant and RUN 
+      ```bash
+         sudo burpsuite
+      ```
+
+    * Open the Firefox browser and navigate to the following webpage: http://192.168.13.35/install.php.
+
+    * The web page should look like as the figure below. Click **here** to install bWapp.
+
+    * After successfully installing bWapp, log in with the following credentials:
+       - Username: bee
+       - Password: bug
+
+
+    * To access the application where we will perform our activity, enter in the following URL: http://192.168.13.35/ba_insecure_login_1.php
+    
+    * On Firefox browser, make sure the FoxyProxy settings is set to **Burp**.
+
+![Web Application 2_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_1.png)
+
+- This page is an administrative web application that serves as a simple login page. An administrator enters their username and password and selects Login:
+     - Username: test-user
+     - Password: password
+
+![Web Application 2_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_2.png)
+
+* Following was displayed in the Burp Suite in **Proxy** tab under the Intercept - Highlighting the **Login and password** credentials.
+
+![Web Application 2_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_3.png)
+
+* From the web application tool Burp Suite, on the **Intercept** tab, right click anywhere to send the information to **Intruder** 
+ 
+   -  Select the **Intruder** tab, and verify the Target tab
+
+![Web Application 2_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_4.png)
+![Web Application 2_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_5.png)
+
+   -  Select the **Positions** tab and change the attack type to **Cluster bomb**, also **clear** all payload positions, except for the login and password credentials.
+
+![Web Application 2_6](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_6.png)
+
+* We've been provided with a list of administrators and the breached passwords:
+* [ ] [List of Administrators](listofadmins.txt)
+* [ ] [Breached list of Passwords](breached_passwords.txt)
+
+
+<details>
+<summary> <b> Click here to view How to conduct a brute force attack. </b> </summary>
+
+---
+
+
+#### How to conduct a brute force attack against a web application login page with the Burp Intruder function 
+   
+* Select **Payloads** tab and enter the [List of Administrators](listofadmins.txt) file that provided above into the **Payload Options [Simple list]** for Payload set: 1  
+
+![Web Application 2_7](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_7.png)
+   
+- Add the password from the [Breached list of Passwords](breached_passwords.txt) file that provided above into the **Payload Options [Simple list]** for Payload set: 2  
+   
+![Web Application 2_8](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_8.png)
+
+- Click the **Start** attack button to get the results.
+   
+![Web Application 2_9](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_9.png)
+
+- Results from the analysis that was complete from the Intruder show that there was one successful login username/password combination. 
+   
+![Web Application 2_10](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_10.png)
+   
+- It was user name of **" tonystark"** and the password **"I am Iron Man"**. Below snapshots display the successful login in the **Response** tab.
+
+![Web Application 2_11](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_11.png)
+   
+#### Mitigation Strategies
+
+**Developers** can use several mitigation methods to protect against a brute force attack:
+
+   1.) Require complex usernames and passwords:
+For example, require the user to include special characters, upper and lowercase, and numbers in the username and password.
+
+   2.) Lockout accounts after a number of failed attempts:
+For example, after three failed login attempts, the user's account gets locked.
+
+   3.) Use multi-factor authentication (MFA):
+For example, require users to have a password and a secondary form of authentication, like a pin generated by an external token and/or requiring complex usernames and passwords. 
+   
+   
+</details>
+
+---
+
+
+---
+
+### Citations and References:
+
+#### General Resources:
+
+- InfoTech News. Command Injection: What It Is And How To Prevent It. [cited 2021 September 29]. Available from: [meterpreter.org](https://meterpreter.org/command-injection-what-it-is-and-how-to-prevent-it/).
+
+
+#### Special thanks:
+© Trilogy Education Services, a 2U, Inc., Instructor Jerry and TAs; Matt, Jansen, Micheal.
+
+© The University of Texas at Austin Boot Camp, The Cybersecurity program.
+
+---
