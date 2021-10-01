@@ -297,7 +297,19 @@ Now we are able to hook into Replicants website, so next we will attempt a coupl
    
 Because BeEF is written in Ruby, it supports multiple operating systems (Linux, Windows, and OS X). More importantly, it is easy to customize new modules in BeEF and extend its functionality.
    
+There may be both technical recommendations (e.g., applying a particular patch) and non-technical recommendations that address the organization’s processes (e.g., updating the patch management process).
 
+1. Deployment of OS and application patches. Maintaining and updating a patch management program is a necessary component in reducing the attack surfaces. 
+
+2. Security architecture changes. External and Internal networks should be separated by different trust boundaries, with packet filtering controls at the nodes in order to reduce an attacker’s access to sensitive information.
+
+3. Review file permissions and use the least privilege principle.
+
+4. Conduct regular vulnerability assessments. Regular vulnerability assessments are needed for the timely discovery and patching of new previously undiscovered vulnerabilities.
+   
+5. Defend web applications against the OWASP Top 10 Security Risks - Policy, process, and procedure modifications including deployment of new security technologies.   
+   
+   
    
 </details>
 
@@ -314,7 +326,8 @@ Because BeEF is written in Ruby, it supports multiple operating systems (Linux, 
 
 - InfoTech News. Command Injection: What It Is And How To Prevent It. [cited 2021 September 29]. Available from: [meterpreter.org](https://meterpreter.org/command-injection-what-it-is-and-how-to-prevent-it/).
 - Akshat Khare. Parth Chopra. Rahul Motwani. Web Applications Penetration Testing. Center of Excellence in Cyber Systems and Information Assurance (CoE-CSIA), IIT Delhi. [cited 2021 October 1]. Available from: [cse.iitd.ac.in](https://www.cse.iitd.ac.in/~cs1160315/WebPenetrationTesting.pdf)
-- 
+- Karen Scarfone (NIST), Murugiah Souppaya (NIST), Amanda Cody (BAH), Angela Orebaugh (BAH). Technical Guide to Information Security Testing and Assessment. NIST National Institute of Standards and Technology. [cited 2021 October 1]. Available from:[nist.gov/publications/](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf).
+- Robert W. Beggs. Mastering Kali Linux for Advanced Penetration Testing. ISBN 978-1-78216-312-1. Packt Publishing Ltd. [cited 2021 October 1]. Available from: [Book club](http://www.happyfunnyland.com/downloads/Mastering-Kali-Linux-for-Advanced-Penetration-Testing-Beggs-Robert.pdf)
 
 
 #### Special thanks:
