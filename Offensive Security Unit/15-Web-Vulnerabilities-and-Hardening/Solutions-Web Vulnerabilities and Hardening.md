@@ -241,13 +241,19 @@ Now we are able to hook into Replicants website, so next we will attempt a coupl
 
 #### How to conduct a brute force attack against a web application login page with the Burp Intruder function 
 
-- First, we'll attempt a social engineering exploit to create a fake Log-in to user. We can use this to capture user credentials.
+- First, we'll attempt a social engineering exploit to create a fake Log-in to user. We can use this to capture victim credentials.
 - To access this exploit, navigate to **BeEF Control Panel** < select current hooked browser < go to **Commands** tab < expanding **Social Engineering** < click **Google Phishing**.
-   
-![Web Application 3_10.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_10.png)
-   
+- To launch th exploit, click **Execute** button in the bottom right corner.
 
+![Web Application 3_8.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_8.png)   
+
+- After executed, return to the browser that has been changed to a Google Mail Login page.     
    
+![Web Application 3_9.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_9.png)
+   
+- The victim could easily mistake entering their credentials. Use the following credentials to login to this fake Google Mail page.
+   
+![Web Application 3_10.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_10.png)   
    
    
 #### Mitigation Strategies
