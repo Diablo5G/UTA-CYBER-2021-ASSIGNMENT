@@ -148,8 +148,27 @@ Your client has asked that you help identify any vulnerabilities with their file
 ---
   
   
-- Command for Zenmap to run a service scan against the Metasploitable machine: 
- 
+- In the lab environment we will use Azure online VMs to demonstrate, consist of two VMs:
+
+| Credentials | Username | Password |
+|----------|----------|------------|
+| **Kali Linux VM** | root | toor |
+| **Metasploitable VM** | msfadmin | msfadmin |
+
+- Once we are connected to both machine, launch Zenmap in Kali by running the following:
+
+```
+sudo zenmap
+```
+
+
+  
+  
+  
+![12](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/12.png) 
+![13](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/13.png)   
+![14](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/14.png)   
+  
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
 
 - Zenmap vulnerability script command: 
