@@ -64,7 +64,7 @@
       *  A series of HTTP headers, or header fields - The HTTP headers for a server's response contain information that a client can use to find out more about the response, and about the server that sent it  
       *  A message body, which is usually needed - the message body contains either the resource requested by the client, or some information about the status of the action requested by the client.   
     
-          ![HTTP_ResponseMessageExample](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/HTTP_ResponseMessageExample.png)  
+          ![HTTP_ResponseMessageExample](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web%20Development/Images/HTTP_ResponseMessageExample.png)  
           
 5. Which number class of status codes represents errors?  
     
@@ -259,7 +259,7 @@ Answer the following questions about monoliths and microservices:
        7. Management 
        8. Service Discovery
 
-![Microservice-architecture](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/Microservice-architecture.png)  
+![Microservice-architecture](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web%20Development/Images/Microservice-architecture.png)  
 
 27. What is a service that writes to a database and communicates to other services?  
     
@@ -338,7 +338,7 @@ Create two new users: Amanda and Ryan.
     - Confirm Password: Check the box to confirm use of weak password.
     - Role: `Administrator`  
   
-![User Amanda Created](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/User%20Amanda%20Created.png)  
+![User Amanda Created](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web%20Development/Images/User%20Amanda%20Created.png)  
 
 5. Create another user named Ryan.
 
@@ -351,7 +351,7 @@ Create two new users: Amanda and Ryan.
     - Confirm Password: Check the box to confirm use of weak password.
     - Role: `Editor`  
 
-![User Ryan Created](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/User%20Ryan%20Created.png)
+![User Ryan Created](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web%20Development/Images/User%20Ryan%20Created.png)
 
 7. Log out and log in with the following credentials:
 
@@ -364,15 +364,15 @@ For these "baselining" steps, you'll want to log into two different types of acc
 
 1. Using your browser, log into your WordPress site as your sysadmin account and navigate to `localhost:8080/wp-admin/users.php`, where we previously created the user Ryan. Examine this page briefly. Log out.
 
-![All Users-login](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/All%20Users-login.png)
+![All Users-login](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web%20Development/Images/All%20Users-login.png)
 
 2. Using your browser, log into your Ryan account and attempt to navigate to `localhost:8080/wp-admin/index.php`. Note the wording on your Dashboard.
 
-![Ryan's Page](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/Ryan's%20Page.png)
+![Ryan's Page](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web%20Development/Images/Ryan's%20Page.png)
 
 3. Attempt to navigate to `localhost:8080/wp-admin/users.php`. Note what you see now.
 
-![Users screen under Ryan's log in](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/Users%20screen%20under%20Ryan's%20log%20in.png)
+![Users screen under Ryan's log in](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web%20Development/Images/Users%20screen%20under%20Ryan's%20log%20in.png)
 
 Log out in the browser.
 
@@ -384,7 +384,7 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 
 - `curl -L -D cookie_test_1.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" http://localhost:8080/wp-login.php`  
     
-    ![Cookie_test_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/Cookie_test_1.png)  
+    ![Cookie_test_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web%20Development/Images/Cookie_test_1.png)  
     
 - **Question:** Did you see any obvious confirmation of a login? (Y/N) None on the Webpage - however there was code confirmation in the terminal.
     * **ANS:** Yes [code confirmation](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Resources/curl_Ryan_credentials.txt)
@@ -395,7 +395,7 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 
 3. Read the contents of the `ryancookies.txt` file.
    
-![ryancookies](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/ryancookies.png)
+![ryancookies](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web%20Development/Images/ryancookies.png)
 
 - **Question:** How many items exist in this file?  
     * **ANS:** There are three.
@@ -419,7 +419,7 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
     * **ANS:** Yes 
 
-![grep Dashboard](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web-Development/Images/grep%20Dashboard.png)
+![grep Dashboard](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/14-Web%20Development/Images/grep%20Dashboard.png)
 
 #### Step 5: Test the Users.php Page
 
