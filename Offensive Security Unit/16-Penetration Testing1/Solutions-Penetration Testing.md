@@ -22,18 +22,17 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
  
   2. What is the NetRange IP address:
   - **ANS:** 65.61.137.64 - 65.61.137.127
- 
-![3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/2.png)
- 
+
   3. What is the company they use to store their infrastructure:
   - **ANS:** Rackspace Backbone Engineering San Antonio, TX.
-
-![4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/2.png)
+ 
+![3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/3.png)
+ 
  
   4. What is the IP address of the DNS server:
   - **ANS:** 65.61.137.117
  
-![5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/2.png)
+![4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/4.png)
 
 
 #### Step 3: Shodan
@@ -41,12 +40,15 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 - What open ports and running services did Shodan find:
   - **ANS:** Open Ports: 80, 443, 8080 found the information at https://www.shodan.io/host/65.61.137.117
 
-
+![5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/5.png)
 
 #### Step 4: Recon-ng
 
+- Now we will install the Recon module **`xssed`** and set the source to **`demo.testfire.net`**.
+
+
 <details>
-<summary> <b> Click here to view How to Exploiting XSS with BeEF. </b> </summary>
+<summary> <b> Click here to view How to install the Recon. </b> </summary>
 
 ---
   
@@ -55,8 +57,9 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 - Set the source to `demo.testfire.net`. 
 - Run the module. 
 
-Is Altoro Mutual vulnerable to XSS: 
-
+- Is Altoro Mutual vulnerable to XSS: 
+  - **ANS:** Yes
+  
 
 </details>
 
