@@ -31,18 +31,40 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 - What open ports and running services did Shodan find:
   - ANS: Open Ports: 80, 443, 8080 found the information at https://www.shodan.io/host/65.61.137.117
 
+
+
 #### Step 4: Recon-ng
 
+<details>
+<summary> <b> Click here to view How to Exploiting XSS with BeEF. </b> </summary>
+
+---
+  
+  
 - Install the Recon module `xssed`. 
 - Set the source to `demo.testfire.net`. 
 - Run the module. 
 
 Is Altoro Mutual vulnerable to XSS: 
 
-### Step 5: Zenmap
+
+</details>
+
+---
+
+
+
+#### Step 5: Zenmap
 
 Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server, complete the following:
 
+
+<details>
+<summary> <b> Click here to view How to Exploiting XSS with BeEF. </b> </summary>
+
+---
+  
+  
 - Command for Zenmap to run a service scan against the Metasploitable machine: 
  
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
@@ -56,6 +78,25 @@ Your client has asked that you help identify any vulnerabilities with their file
 
   3. What mitigation strategies can you recommendations for the client to protect their server:
 
+</details>
+
 ---
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
+
+
+### Citations and References:
+
+#### General Resources:
+
+- InfoTech News. Command Injection: What It Is And How To Prevent It. [cited 2021 September 29]. Available from: [meterpreter.org](https://meterpreter.org/command-injection-what-it-is-and-how-to-prevent-it/).
+- Akshat Khare. Parth Chopra. Rahul Motwani. Web Applications Penetration Testing. Center of Excellence in Cyber Systems and Information Assurance (CoE-CSIA), IIT Delhi. [cited 2021 October 1]. Available from: [cse.iitd.ac.in](https://www.cse.iitd.ac.in/~cs1160315/WebPenetrationTesting.pdf)
+- Karen Scarfone (NIST), Murugiah Souppaya (NIST), Amanda Cody (BAH), Angela Orebaugh (BAH). Technical Guide to Information Security Testing and Assessment. NIST National Institute of Standards and Technology. [cited 2021 October 1]. Available from:[nist.gov/publications](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf).
+- Robert W. Beggs. Mastering Kali Linux for Advanced Penetration Testing. ISBN 978-1-78216-312-1. Packt Publishing Ltd. [cited 2021 October 1]. Available from: [Mastering Kali Linux for Advanced Penetration Testing 3rd Edition](https://www.amazon.com/Mastering-Linux-Advanced-Penetration-Testing/dp/178934056X)
+
+
+#### Special thanks:
+© Trilogy Education Services, a 2U, Inc., Instructor Jerry and TAs; Matt, Jansen, Micheal.
+
+© The University of Texas at Austin Boot Camp, The Cybersecurity program.
+
+---  
 
