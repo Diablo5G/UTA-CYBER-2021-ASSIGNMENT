@@ -16,21 +16,21 @@
 Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the following questions based on the results:
 
   1. Where is the company located: 
-  - **ANS:** Sunnyvale CA 94085 US.
+    - **ANS:** Sunnyvale CA 94085 US.
 
 ![2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/2.png)
  
   2. What is the NetRange IP address:
-  - **ANS:** 65.61.137.64 - 65.61.137.127
+    - **ANS:** 65.61.137.64 - 65.61.137.127
 
   3. What is the company they use to store their infrastructure:
-  - **ANS:** Rackspace Backbone Engineering San Antonio, TX.
+    - **ANS:** Rackspace Backbone Engineering San Antonio, TX.
  
 ![3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/3.png)
  
  
   4. What is the IP address of the DNS server:
-  - **ANS:** 65.61.137.117
+    - **ANS:** 65.61.137.117
  
 ![4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/4.png)
 
@@ -38,7 +38,7 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 #### Step 3: Shodan
 
 - What open ports and running services did Shodan find:
-  - **ANS:** Open Ports: 80, 443, 8080 found the information at https://www.shodan.io/host/65.61.137.117
+    - **ANS:** Open Ports: 80, 443, 8080 found the information at https://www.shodan.io/host/65.61.137.117
 
 ![5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/5.png)
 
