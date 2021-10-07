@@ -4,32 +4,38 @@
 
 
 - Using Google, can you identify who the Chief Executive Officer of Altoro Mutual is:
+
   - **ANS:** Altoro Mutual is the the Chief Executive Officer of Altoro Mutual, found the information at [CEO Reveal](https://demo.testfire.net/index.jsp?content=inside_executives.htm)
  
 ![1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/1.png)
 
 - How can this information be helpful to an attacker:
+  
   - **ANS:** Hacker be able to send phishing email directly to the executive members.
 
 #### Step 2: DNS and Domain Discovery
 
 Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the following questions based on the results:
 
-  1. Where is the company located: 
+-  Where is the company located: 
+    
     - **ANS:** Sunnyvale CA 94085 US.
 
 ![2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/2.png)
  
-  2. What is the NetRange IP address:
+-  What is the NetRange IP address:
+    
     - **ANS:** 65.61.137.64 - 65.61.137.127
 
-  3. What is the company they use to store their infrastructure:
+-  What is the company they use to store their infrastructure:
+    
     - **ANS:** Rackspace Backbone Engineering San Antonio, TX.
  
 ![3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/3.png)
  
  
-  4. What is the IP address of the DNS server:
+-  What is the IP address of the DNS server:
+    
     - **ANS:** 65.61.137.117
  
 ![4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/4.png)
@@ -38,6 +44,7 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 #### Step 3: Shodan
 
 - What open ports and running services did Shodan find:
+    
     - **ANS:** Open Ports: 80, 443, 8080 found the information at https://www.shodan.io/host/65.61.137.117
 
 ![5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/5.png)
@@ -54,12 +61,75 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
   
   
 - Install the Recon module `xssed`. 
-- Set the source to `demo.testfire.net`. 
-- Run the module. 
-
-- Is Altoro Mutual vulnerable to XSS: 
-  - **ANS:** Yes
   
+  - Search the module xssed by entering the command 
+  
+  
+  ```
+  marketplace search xssed
+  ```
+  
+  - Install the module xssed by entering the command 
+  
+  
+  ```
+  marketplace install recon/domains-vulnerabilities/xssed
+  ```
+
+  - Load the module xssed by entering the command 
+ 
+  
+  ```
+  module load recon/domains-vulnerabilities/xssed
+  ``` 
+ 
+![6](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/6.png) 
+  
+  
+- Set the source to demo.testfire.net. 
+  
+  - Check the details of the module `xssed` by entering the command 
+  
+  ```
+  info
+  ```
+  
+  - To change the SOURCE from default to demo.testfire.net by entering the command 
+  
+  ```
+  options set SOURCE demo.testfire.net
+  ```
+  
+![8](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/8.png)
+  
+  - To change the SOURCE from default to demo.testfire.net by entering the command 
+  
+  ```
+  run
+  ```
+  
+![9](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/9.png)  
+  
+  - Is Altoro Mutual vulnerable to XSS: 
+    - **ANS:** Yes, it was the only vulnerability found, as the screenshot above
+
+  
+  - Enter the following script in the search bar on browser 
+  
+  ```
+  <script>alert("Hello")</script>
+  ```
+
+![10](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/10.png)  
+  
+  
+  - or can enter any desire script in the search bar on browser such as
+  
+  ```
+  <script>alert("twerking twerking when I buy the things I like-Lisa BlackPink")</script>
+  ```
+
+![11](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/11.png)  
 
 </details>
 
