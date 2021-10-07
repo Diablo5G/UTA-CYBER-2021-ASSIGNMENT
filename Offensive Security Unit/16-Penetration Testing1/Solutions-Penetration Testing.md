@@ -139,11 +139,11 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 
 #### Step 5: Zenmap
 
-Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server, complete the following:
+Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server.
 
 
 <details>
-<summary> <b> Click here to view How to Exploiting XSS with BeEF. </b> </summary>
+<summary> <b> Click here to view How to look for vulnerabilities. </b> </summary>
 
 ---
   
@@ -154,12 +154,29 @@ Your client has asked that you help identify any vulnerabilities with their file
 
 - Zenmap vulnerability script command: 
 
-- Once you have identified this vulnerability, answer the following questions for your client:
-  1. What is the vulnerability:
 
+  
+  
+- So now we have identified this vulnerability then we can answer the following questions for our client:
+  
+  1. What is the vulnerability:
+  
+    - **ANS:**
+  
+  
   2. Why is it dangerous:
 
+    - **ANS:**
+  
+  
   3. What mitigation strategies can you recommendations for the client to protect their server:
+  
+    - **ANS:**
+
+
+
+
+
 
 </details>
 
