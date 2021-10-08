@@ -182,7 +182,7 @@ ifconfig
   
 - Input target `192.168.0.10`, profile: `quick scan`, the raw command is `nmap -T4 -A 192.168.0.10` then click the `SCAN` button to run 
   
-  - The -T4 flag enables passive OS detection. Nmap attempts to determine the target machine's operating system based only on the data it collects during a normal port scan. In other words, it does not send specially-crafted packets to determine the target operating system.
+  - The -T4 flag enables Fast Speed
 
   - The -A flag enables active OS detection. Nmap sends additional packets meant to specifically trigger responses revealing the OS of the target. This method is much noisier than the -O flag and more likely to be detected by an IDS.
   
@@ -192,6 +192,7 @@ ifconfig
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
 
   - To save the results in the zenmapscan.txt add the following on the command line `-oN zenmapscan.txt` and you can also put command directly, see the capture screen picture below:
+    - The -oN flag enables save output to a text file
 
 ![13](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/13.png)
   
@@ -259,6 +260,8 @@ So now we have identified this vulnerability then we can answer the following qu
 #### Penetration Testing Documentation:
 - [Google Dorking Cheat Sheet](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06.js)
 - [Recon-ng 5.1 Cheat Sheet](https://www.blackhillsinfosec.com/wp-content/uploads/2019/11/recon-ng-5.x-cheat-sheet-Sheet1-1.pdf)
+- [Shodan Cheat Sheet](https://thedarksource.com/shodan-cheat-sheet/)
+- [Zenmap Cheat Sheet](https://cs.lewisu.edu/~klumpra/camssem2015/nmapcheatsheet1.pdf)
 
 
 #### Special thanks:
