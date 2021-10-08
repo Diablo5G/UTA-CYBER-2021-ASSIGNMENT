@@ -1,40 +1,47 @@
 ## Solutions Submission File: Penetration Testing 1
 
+
+<img align="left" width="50" height="50" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/hacker.png" alt="hacker icon">
+
 #### Step 1: Google Dorking
 
+Google hacking, also named Google dorking, It is a hacker technique that uses Google Search and other Google applications to find security holes in the configuration and computer code that websites are using.Google dorking could also be used for OSINT. 
 
-- Using Google, can you identify who the Chief Executive Officer of Altoro Mutual is:
+- Can you identify who the Chief Executive Officer of Altoro Mutual is?
 
-  - **ANS:** Altoro Mutual is the the Chief Executive Officer of Altoro Mutual, found the information at [CEO Reveal](https://demo.testfire.net/index.jsp?content=inside_executives.htm)
+  -  **ANS:** Altoro Mutual is the the Chief Executive Officer of Altoro Mutual, found the information at [CEO Reveal](https://demo.testfire.net/index.jsp?content=inside_executives.htm)
  
 ![1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/1.png)
 
-- How can this information be helpful to an attacker:
+- How can this information be helpful to an attacker?
   
   - **ANS:** Hacker be able to send phishing email directly to the executive members.
+
+
+<img align="left" width="50" height="50" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/icon-dns.png" alt="dns icon">
 
 #### Step 2: DNS and Domain Discovery
 
 Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the following questions based on the results:
 
--  Where is the company located: 
+-  Where is the company located? 
     
     - **ANS:** Sunnyvale CA 94085 US.
 
 ![2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/2.png)
  
--  What is the NetRange IP address:
+-  What is the NetRange IP address?
     
     - **ANS:** 65.61.137.64 - 65.61.137.127
 
--  What is the company they use to store their infrastructure:
+-  What is the company they use to store their infrastructure?
     
     - **ANS:** Rackspace Backbone Engineering San Antonio, TX.
  
 ![3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/3.png)
  
  
--  What is the IP address of the DNS server:
+-  What is the IP address of the DNS server?
     
     - **ANS:** 65.61.137.117
  
@@ -45,9 +52,11 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 
 #### Step 3: Shodan
 
-- What open ports and running services did Shodan find:
+Shodan is the world's first search engine for Internet-connected devices. Shodan platform discovers everything from power plants, mobile phones, refrigerators, and Minecraft servers.
+
+-  What open ports and running services did Shodan find?
     
-    - **ANS:** Open Ports: 80, 443, 8080 found the information at [HERE](https://www.shodan.io/host/65.61.137.117)
+    - **ANS:** Open Ports: 80, 443, 8080 found the information [HERE](https://www.shodan.io/host/65.61.137.117)
 
 ![5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/5.png)
 
@@ -203,6 +212,32 @@ Now, you can access and review output at [zenmapscan.txt](https://github.com/Dia
 
   
 **Zenmap vulnerability script command:**  
+  
+On **Zenmap**, 
+
+- There are some scripts that can be located inside zenmap for vulnerabilities on a file-sharing servers. We will try to run two scripts as follows:
+  
+    - Click the **Profile** tab at the top and select **Edit Selected Profile**.
+    - Click on the **Scripting** tab and view all the scripts that start with `ftp`.
+    - Select the `ftp-vsftpd-backdoor` script by placing a check in the box.
+  
+![16](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/16.png)  
+
+
+- Select the `smb-enum-shares` script by placing a check in the box.
+  
+![17](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/17.png)    
+  
+- Click **Save Changes** to save the profile settings.  Then, the raw Nmap command that Zenmap will run: `nmap -T4 -F --script ftp-vsftpd-backdoor,smb-enum-shares 192.168.0.10` as the screenshot below
+
+  -  `-T4`: Adjusts the speed of the scan. Ranging from 0-5, 4 is a fast and aggressive timing option.
+  - `-F`: Indicates a fast scan by only scanning the 100 most common ports.
+  - `--script`: Runs a scripted scan.
+  - `ftp-vsftpd-backdoor`: This script attemps to exploit the backdoor using the innocuous id command by default. 
+  - `smb-enum-shares`: Host script results | smb-enum-shares: | account_used: WORKGROUP\Administrator | ADMIN$ | Type: STYPE_DISKTREE_HIDDEN | Comment: Remote Administrator.
+  - `192.168.0.10`: IP address of host that will be scanned.
+
+![18](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/18.png)      
     
 So now we have identified this vulnerability then we can answer the following questions for our client:
   
@@ -228,7 +263,7 @@ So now we have identified this vulnerability then we can answer the following qu
               - The concept of the attack on VSFTPD 2.3.4 is to trigger the malicious vsf_sysutil_extra(); function by sending a sequence of specific bytes on port 21, which on successful execution, results in opening the backdoor on port 6200 of the system and running as root.
       
           - The Windows Server Message Block (SMB) gets access through the organization's networks, the SMB protocols used by PCs for file and printer sharing, along with the remote access services.
-              - SMB vulnerabilities allow their payloads to spread laterally through connected systems.  
+              - SMB vulnerabilities allow their payloads to spread laterally through connected systems like a worm. CISA recommends all IT professionals disable their SMB protocols to prevent ransomware and other malware attacks.
 
   
   3. What mitigation strategies can you recommendations for the client to protect their server?
@@ -252,9 +287,11 @@ So now we have identified this vulnerability then we can answer the following qu
 
 #### General Resources:
 
-- vsftpd 2.3.4 - Backdoor Command Execution (Metasploit). EXPLOIT DATABASE BY OFFENSIVE SECURITY. © OffSec Services Limited 2021. [cited 2021 October 08]. Available from: [Metasploit](https://www.exploit-db.com/exploits/17491).
-
-
+- Rbcafe. 2020 Google Dorking List. © 2021 Google Dorking.com [cited 2021 October 08]. Available from:[Google Dorking](http://www.google-dorking.com/2021/10/2020-google-dorking-list.html). 
+- vsftpd 2.3.4 - Backdoor Command Execution (Metasploit). © OffSec Services Limited 2021. [cited 2021 October 08]. Available from: [Metasploit](https://www.exploit-db.com/exploits/17491).
+- Reduce the Risk of Ransomware Awareness Campaign. CYBERSECURITY & INFRASTRUCTURE SECURITY AGENCY (CISA). © 2021 CISA.com [cited 2021 October 08]. Available from:[SMB vulnerabilities](https://www.cisa.gov/sites/default/files/publications/Fact%20sheet_Ransomware%20Awareness%20Campaign_20210119_508.pdf)
+- CVE-2011-2523. Red Hat Security. © 2021 Red Hat, Inc. [cited 2021 October 08]. Available from:[CVE-2011-2523](https://access.redhat.com/security/cve/cve-2011-2523)
+- Microsoft Security Bulletin MS17-010 - Critical. Security Update for Microsoft Windows SMB Server (4013389). © Microsoft 2021. [cited 2021 October 08]. Available from:[MS17-010 - Critical](https://docs.microsoft.com/en-us/security-updates/securitybulletins/2017/ms17-010). 
 
 
 #### Penetration Testing Documentation:
