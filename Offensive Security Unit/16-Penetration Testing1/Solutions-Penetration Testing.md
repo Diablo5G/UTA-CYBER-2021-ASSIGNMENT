@@ -135,11 +135,15 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 
 ---
 
+ 
 
+<img align="left" width="60" height="40" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/eyelogo.jpg" alt="zenmap icon">
 
 #### Step 5: Zenmap
 
-Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server.
+
+Your client has asked that you help identify any vulnerabilities with their file-sharing server. We are using the Metasploitable machine to act as your client's server in this demonstration.
+
 
 
 <details>
@@ -170,24 +174,30 @@ ifconfig
 
 ![15](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/15.png) 
   
-- Input target `192.168.0.10`, profile: `quick scan`, the raw command is `nmap -T4 -A 192.168.0.10
+- Input target `192.168.0.10`, profile: `quick scan`, the raw command is `nmap -T4 -A 192.168.0.10` then click the `SCAN` button to run 
   
   - The -T4 flag enables passive OS detection. Nmap attempts to determine the target machine's operating system based only on the data it collects during a normal port scan. In other words, it does not send specially-crafted packets to determine the target operating system.
 
   - The -A flag enables active OS detection. Nmap sends additional packets meant to specifically trigger responses revealing the OS of the target. This method is much noisier than the -O flag and more likely to be detected by an IDS.
   
 ![12](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/12.png) 
-![13](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/13.png)   
-![14](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/14.png)   
+      
   
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
 
-- Zenmap vulnerability script command: 
+  - To save the results in the zenmapscan.txt add the following on the command line `-oN zenmapscan.txt` and you can also put command directly, see the capture screen picture below:
 
+![13](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/13.png)
+  
+Now, you can access and review output at [TXT](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/zenmapscan.txt)
 
   
+![14](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/14.png)
   
-- So now we have identified this vulnerability then we can answer the following questions for our client:
+   - Zenmap vulnerability script command:  
+  
+  
+  - So now we have identified this vulnerability then we can answer the following questions for our client:
   
   1. What is the vulnerability:
   
@@ -221,6 +231,8 @@ ifconfig
 - Akshat Khare. Parth Chopra. Rahul Motwani. Web Applications Penetration Testing. Center of Excellence in Cyber Systems and Information Assurance (CoE-CSIA), IIT Delhi. [cited 2021 October 1]. Available from: [cse.iitd.ac.in](https://www.cse.iitd.ac.in/~cs1160315/WebPenetrationTesting.pdf)
 - Karen Scarfone (NIST), Murugiah Souppaya (NIST), Amanda Cody (BAH), Angela Orebaugh (BAH). Technical Guide to Information Security Testing and Assessment. NIST National Institute of Standards and Technology. [cited 2021 October 1]. Available from:[nist.gov/publications](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf).
 - Robert W. Beggs. Mastering Kali Linux for Advanced Penetration Testing. ISBN 978-1-78216-312-1. Packt Publishing Ltd. [cited 2021 October 1]. Available from: [Mastering Kali Linux for Advanced Penetration Testing 3rd Edition](https://www.amazon.com/Mastering-Linux-Advanced-Penetration-Testing/dp/178934056X)
+- This is the [Google Dorking Cheat Sheet](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06.js)
+- 
 
 
 #### Special thanks:
