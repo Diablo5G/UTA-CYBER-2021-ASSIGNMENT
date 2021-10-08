@@ -197,45 +197,48 @@ ifconfig
   
 ![14](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/14.png)  
 
-Now, you can access and review output at [TXT](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/zenmapscan.txt)
+Now, you can access and review output at [zenmapscan.txt](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/zenmapscan.txt)
+
 
   
-   - Zenmap vulnerability script command:  
-  
-  
-
-  
-  
+**Zenmap vulnerability script command:**  
+    
 So now we have identified this vulnerability then we can answer the following questions for our client:
   
-  1. What is the vulnerability:
+  1. What is the vulnerability?
   
-    - **ANS:** As per the below screenshots, Zenmap was able to identify the vulnerable service for port 139/445.
+       - **ANS:** As per the below screenshots, Zenmap was able to identify the vulnerable service for port 139/445.
 
 ![19](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/19.png)
 
 ![20](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/20.png)
 
 ![21](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/21.png)
-  
-  2. Why is it dangerous:
 
-    - **ANS:**
+
+
+  
+  2. Why is it dangerous?
+
+       - **ANS:**  
       
-      - This is dangerous due to the VSFTPD 2.3.4 backdoor attack can be applied on port 21 via a malicious code, if successful execution, opens the backdoor on port 6200.
-          - This backdoor was introduced into the vsftpd-2.3.4.tar.gz archive between June 30th, 2011, and July 1st, 2011 according to the most recent information available. This backdoor was removed on July 3rd, 2011.
-          - The concept of the attack on VSFTPD 2.3.4 is to trigger the malicious vsf_sysutil_extra(); function by sending a sequence of specific bytes on port 21, which on successful execution, results in opening the backdoor on port 6200 of the system and running as root.
+          - This is dangerous due to the VSFTPD 2.3.4 backdoor attack can be applied on port 21 via a malicious code, if successful execution, opens the backdoor on port 6200.
+              - This backdoor was introduced into the vsftpd-2.3.4.tar.gz archive between June 30th, 2011, and July 1st, 2011 according to the most recent information available. This backdoor was removed on July 3rd, 2011.
+              - The concept of the attack on VSFTPD 2.3.4 is to trigger the malicious vsf_sysutil_extra(); function by sending a sequence of specific bytes on port 21, which on successful execution, results in opening the backdoor on port 6200 of the system and running as root.
       
-      - The Windows Server Message Block (SMB) gets access through the organization's networks, the SMB protocols used by PCs for file and printer sharing, along with the remote access services.
-          - SMB vulnerabilities allow their payloads to spread laterally through connected systems.  
+          - The Windows Server Message Block (SMB) gets access through the organization's networks, the SMB protocols used by PCs for file and printer sharing, along with the remote access services.
+              - SMB vulnerabilities allow their payloads to spread laterally through connected systems.  
 
   
-  3. What mitigation strategies can you recommendations for the client to protect their server:
+  3. What mitigation strategies can you recommendations for the client to protect their server?
   
-    - **ANS:**
+       - **ANS:**
 
+          - The vsftpd-2.3.4. the patch was released on July 3, 2011, with the patch constantly monitored and updated.
+              - The vsftpd-2.3.4. backdoor reported on 2011-07-04 (CVE-2011-2523).
+  
 
-
+          - The SMB (CVE-2017-0145) patch was released by Microsoft MS17-010, and the SAMBA (CVE-2017-0145) patches were released by Red Hat for Linux RHSA-2017:1390.
 
 
 
