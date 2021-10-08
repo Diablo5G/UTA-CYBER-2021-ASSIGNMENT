@@ -41,17 +41,23 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 ![4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/4.png)
 
 
+<img align="left" width="50" height="60" src="https://github.com/NX211/homer-icons/blob/master/png/shinobi.png" alt="shodan icon">
+
 #### Step 3: Shodan
 
 - What open ports and running services did Shodan find:
     
-    - **ANS:** Open Ports: 80, 443, 8080 found the information at https://www.shodan.io/host/65.61.137.117
+    - **ANS:** Open Ports: 80, 443, 8080 found the information at [HERE](https://www.shodan.io/host/65.61.137.117)
 
 ![5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/5.png)
 
+
+
+<img align="left" width="50" height="40" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/Ghost-Recon-logo.ico" alt="recon icon">
+
 #### Step 4: Recon-ng
 
-- Now we will install the Recon module **`xssed`** and set the source to **`demo.testfire.net`**.
+Now we will install the Recon module **`xssed`** and set the source to **`demo.testfire.net`**.
 
 
 <details>
@@ -189,25 +195,40 @@ ifconfig
 
 ![13](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/13.png)
   
+![14](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/14.png)  
+
 Now, you can access and review output at [TXT](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/zenmapscan.txt)
 
-  
-![14](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/14.png)
   
    - Zenmap vulnerability script command:  
   
   
-  - So now we have identified this vulnerability then we can answer the following questions for our client:
+
+  
+  
+So now we have identified this vulnerability then we can answer the following questions for our client:
   
   1. What is the vulnerability:
   
-    - **ANS:**
-  
+    - **ANS:** As per the below screenshots, Zenmap was able to identify the vulnerable service for port 139/445.
+
+![19](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/19.png)
+
+![20](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/20.png)
+
+![21](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/21.png)
   
   2. Why is it dangerous:
 
     - **ANS:**
-  
+      
+      - This is dangerous due to the VSFTPD 2.3.4 backdoor attack can be applied on port 21 via a malicious code, if successful execution, opens the backdoor on port 6200.
+          - This backdoor was introduced into the vsftpd-2.3.4.tar.gz archive between June 30th, 2011, and July 1st, 2011 according to the most recent information available. This backdoor was removed on July 3rd, 2011.
+          - The concept of the attack on VSFTPD 2.3.4 is to trigger the malicious vsf_sysutil_extra(); function by sending a sequence of specific bytes on port 21, which on successful execution, results in opening the backdoor on port 6200 of the system and running as root.
+      
+      - The Windows Server Message Block (SMB) gets access through the organization's networks, the SMB protocols used by PCs for file and printer sharing, along with the remote access services.
+          - SMB vulnerabilities allow their payloads to spread laterally through connected systems.  
+
   
   3. What mitigation strategies can you recommendations for the client to protect their server:
   
@@ -227,12 +248,14 @@ Now, you can access and review output at [TXT](https://github.com/Diablo5G/UTA-C
 
 #### General Resources:
 
-- InfoTech News. Command Injection: What It Is And How To Prevent It. [cited 2021 September 29]. Available from: [meterpreter.org](https://meterpreter.org/command-injection-what-it-is-and-how-to-prevent-it/).
-- Akshat Khare. Parth Chopra. Rahul Motwani. Web Applications Penetration Testing. Center of Excellence in Cyber Systems and Information Assurance (CoE-CSIA), IIT Delhi. [cited 2021 October 1]. Available from: [cse.iitd.ac.in](https://www.cse.iitd.ac.in/~cs1160315/WebPenetrationTesting.pdf)
-- Karen Scarfone (NIST), Murugiah Souppaya (NIST), Amanda Cody (BAH), Angela Orebaugh (BAH). Technical Guide to Information Security Testing and Assessment. NIST National Institute of Standards and Technology. [cited 2021 October 1]. Available from:[nist.gov/publications](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf).
-- Robert W. Beggs. Mastering Kali Linux for Advanced Penetration Testing. ISBN 978-1-78216-312-1. Packt Publishing Ltd. [cited 2021 October 1]. Available from: [Mastering Kali Linux for Advanced Penetration Testing 3rd Edition](https://www.amazon.com/Mastering-Linux-Advanced-Penetration-Testing/dp/178934056X)
-- This is the [Google Dorking Cheat Sheet](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06.js)
-- 
+- vsftpd 2.3.4 - Backdoor Command Execution (Metasploit). EXPLOIT DATABASE BY OFFENSIVE SECURITY. © OffSec Services Limited 2021. [cited 2021 October 08]. Available from: [Metasploit](https://www.exploit-db.com/exploits/17491).
+
+
+
+
+#### Penetration Testing Documentation:
+- [Google Dorking Cheat Sheet](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06.js)
+- [Recon-ng 5.1 Cheat Sheet](https://www.blackhillsinfosec.com/wp-content/uploads/2019/11/recon-ng-5.x-cheat-sheet-Sheet1-1.pdf)
 
 
 #### Special thanks:
