@@ -161,9 +161,20 @@ Your client has asked that you help identify any vulnerabilities with their file
 sudo zenmap
 ```
 
+- At the Metasploitable VM, check IP address by running the following:
+  
+```
+ifconfig
+```
+  
 
+![15](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/15.png) 
   
+- Input target `192.168.0.10`, profile: `quick scan`, the raw command is `nmap -T4 -A 192.168.0.10
   
+  - The -T4 flag enables passive OS detection. Nmap attempts to determine the target machine's operating system based only on the data it collects during a normal port scan. In other words, it does not send specially-crafted packets to determine the target operating system.
+
+  - The -A flag enables active OS detection. Nmap sends additional packets meant to specifically trigger responses revealing the OS of the target. This method is much noisier than the -O flag and more likely to be detected by an IDS.
   
 ![12](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/12.png) 
 ![13](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/16-Penetration%20Testing1/Images/13.png)   
