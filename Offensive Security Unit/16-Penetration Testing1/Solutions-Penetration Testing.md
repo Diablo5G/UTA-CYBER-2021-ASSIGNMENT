@@ -5,7 +5,7 @@
 
 #### Step 1: Google Dorking
 
-Google hacking, also named Google dorking, It is a hacker technique that uses Google Search and other Google applications to find security holes in the configuration and computer code that websites are using.Google dorking could also be used for OSINT. 
+Google hacking, also named Google Dorking, It is a hacker technique that uses Google Search and other Google applications to find security holes in the configuration and computer code that websites are using. Google Dorking could also be used for OSINT.
 
 - Can you identify who the Chief Executive Officer of Altoro Mutual is?
 
