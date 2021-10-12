@@ -135,7 +135,10 @@ B. Open a Meterpreter shell and gather system information for the target.
  
 C. Run the command that displays the target's computer system information:
 
-   > **ANS:** `sysinfo`    
+   > **ANS:** `sysinfo` 
+
+![14](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/17-Penetration%20Test%20Engagement/Resources/Images/14.png)
+
 
 ---
 ___
@@ -148,22 +151,6 @@ ___
 
 
 ### Citations and References:
-
-#### General Resources:
-
-- Rbcafe. 2020 Google Dorking List. © 2021 Google Dorking.com [cited 2021 October 08]. Available from:[Google Dorking](http://www.google-dorking.com/2021/10/2020-google-dorking-list.html). 
-- vsftpd 2.3.4 - Backdoor Command Execution (Metasploit). © OffSec Services Limited 2021. [cited 2021 October 08]. Available from: [Metasploit](https://www.exploit-db.com/exploits/17491).
-- Reduce the Risk of Ransomware Awareness Campaign. CYBERSECURITY & INFRASTRUCTURE SECURITY AGENCY (CISA). © 2021 CISA.com [cited 2021 October 08]. Available from:[SMB vulnerabilities](https://www.cisa.gov/sites/default/files/publications/Fact%20sheet_Ransomware%20Awareness%20Campaign_20210119_508.pdf)
-- CVE-2011-2523. Red Hat Security. © 2021 Red Hat, Inc. [cited 2021 October 08]. Available from:[CVE-2011-2523](https://access.redhat.com/security/cve/cve-2011-2523)
-- Microsoft Security Bulletin MS17-010 - Critical. Security Update for Microsoft Windows SMB Server (4013389). © Microsoft 2021. [cited 2021 October 08]. Available from:[MS17-010 - Critical](https://docs.microsoft.com/en-us/security-updates/securitybulletins/2017/ms17-010). 
-
-
-#### Penetration Testing Documentation:
-- [Google Dorking Cheat Sheet](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06.js)
-- [Recon-ng 5.1 Cheat Sheet](https://www.blackhillsinfosec.com/wp-content/uploads/2019/11/recon-ng-5.x-cheat-sheet-Sheet1-1.pdf)
-- [Shodan Cheat Sheet](https://thedarksource.com/shodan-cheat-sheet/)
-- [Zenmap Cheat Sheet](https://cs.lewisu.edu/~klumpra/camssem2015/nmapcheatsheet1.pdf)
-
 
 #### Special thanks:
 © Trilogy Education Services, a 2U, Inc., Instructor Jerry and TAs; Matt, Jansen, Micheal.
