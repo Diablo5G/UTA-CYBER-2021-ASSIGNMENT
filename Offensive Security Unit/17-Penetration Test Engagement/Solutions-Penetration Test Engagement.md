@@ -26,6 +26,12 @@ We've been provided full access to the network and are getting ping responses fr
     - Run the Nmap command that performs a service and version scan against the target.
 
       > **ANS:** `nmap -sS -sV -O 192.168.0.20`  
+      
+      > -sS [target]   = TCP SYN port scan (Default)
+      
+      > -O  [target]   = Operating system detection 
+      
+      > -sV [target]   = Service version detection 
        
 ![1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/17-Penetration%20Test%20Engagement/Resources/Images/1.png)
  
@@ -143,7 +149,7 @@ C. Run the command that displays the target's computer system information:
 ---
 ___
 
- - Full Penetration Test Engagement Report available at [Report_10152021](Resources/Report.docx)
+ - Full Penetration Test Engagement Report available at [Report_10132021](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/17-Penetration%20Test%20Engagement/Resources/Report/Penetration%20Test%20Engagement%20Report.pdf)
 
 ---
 ___
