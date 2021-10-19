@@ -1,9 +1,13 @@
 
-<img align="left" width="250" height="250" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/Splunk%20icon.svg" alt="hacker icon">
+<img align="left" width="80" height="80" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/Splunk%20icon.svg" alt="hacker icon">
+
+## Unit 18 Homework: Lets go Splunking!
+
+
 
 ### Scenario
 
-- We have just been hired as an SOC Analyst by Vandalay Industries, an importing and exporting company.
+We have just been hired as an SOC Analyst by Vandalay Industries, an importing and exporting company.
  
 - Vandalay Industries uses Splunk for security monitoring and have been experiencing a variety of security issues against their online systems over the past few months. 
  
@@ -26,7 +30,6 @@ After we complete the assignment we are asked to provide the following:
 
 ---
 
-<img align="left" width="60" height="40" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/ddos.jpg" alt="hacker icon">
 
 ## Vandalay Industries Monitoring Activity Instructions
 
@@ -41,10 +44,10 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
 
 
 1.  Upload the following file of the system speeds around the time of the attack.
+    
     - [Speed Test File](resources/server_speedtest.csv)
 
   -  **ANS:** 
-  
      ```bash
      source="server_speedtest.csv" host="server_speedtest" sourcetype="csv" | eval ratio='DOWNLOAD_MEGABITS'/'UPLOAD_MEGABITS'
      ```
@@ -56,23 +59,22 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
        source="server_speedtest.csv" host="server_speedtest" | eval ratio ='DOWNLOAD_MEGABITS' / 'UPLOAD_MEGABITS'
        ```
 
-   ![step1_1](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/eval_ration_DL_UP_megabits.jpg)
+   ![step1_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step1_1.png)
       
 3. Create a report using the Splunk's `table` command to display the following fields in a statistics report:
     - `_time`
     - `IP_ADDRESS`
     - `DOWNLOAD_MEGABITS`
     - `UPLOAD_MEGABITS`
-    - `ratio`
-  
+    - `ratio`  
   -  **ANS:** 
   ```bash
   source="server_speedtest.csv"| eval ratio ='DOWNLOAD_MEGABITS' / 'UPLOAD_MEGABITS' | table _time IP_ADDRESS DOWNLOAD_MEGABITS UPLOAD_MEGABITS ratio
   ```
   
-  ![step1_2](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/eval_ration_DL_UP_megabits.jpg)
-  ![step1_3](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/server_spreadsheet_table_report.jpg)
-  ![step1_4](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/server_spreadsheet_table_report.jpg)
+  ![step1_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step1_2.png)
+  ![step1_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step1_3.png)
+  ![step1_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step1_4.png)
   
   
 4. Answer the following questions:
@@ -99,7 +101,8 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
    ```bash
    source="nessus_logs.csv" host="nessus_logs" sourcetype="nessus_logs"
    ```
-![step2_1](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/server_spreadsheet_table_report.jpg)
+
+![step2_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step2_1.png)
 
 
 2. Create a report that shows the `count` of critical vulnerabilities from the customer database server.
@@ -112,14 +115,14 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
    ```
    There are 49 Critical database server vulnerabilities.
    
-![step2_2](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/server_spreadsheet_table_report.jpg)
+![step2_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step2_2.png)
 
       
 3. Build an alert that monitors every day to see if this server has any critical vulnerabilities. If a vulnerability exists, have an alert emailed to `soc@vandalay.com`.
                            
-![step2_3](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/step2-ipaddress-vulnerabilites-49.jpg)
-![step2_4](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/Step2-Alert-setup-email.jpg)
-![step2_5](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/Step2-Alert-setup-email.jpg)
+![step2_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step2_3.png)
+![step2_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step2_4.png)
+![step2_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step2_5.png)
 
 
 
@@ -143,15 +146,27 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
   source="Administrator_logs.csv" host="Administrator_logs" sourcetype="cvs" | stats count by name | sort -count | eval Bruteforce=if(name="An account failed to log on" AND count>10, "Potential Brute Force", "Not Brute Force")
   ```
 
-![step3_2](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/server_spreadsheet_table_report.jpg)
-![step3_3](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/server_spreadsheet_table_report.jpg)
+![step3_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step3_2.png)
+![step3_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step3_3.png)
+![step3_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step3_4.png)
 
   -  **ANS:** I found the baseline and threshold, the attack happened between 9 AM to 2 PM on 2/21/2020 for 5 hours, by examining the 'name' field for "An account failed to log on".    
 
 4. Design an alert to check the threshold every hour and email the SOC team at SOC@vandalay.com if triggered.  
 
-![step3_4](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/brute-froce-attack-timing.jpg)
-![step3_5](https://github.com/iastoneCO/Images/blob/687dbf73573107c9a7d0cfb5e6cc74f01e22c95c/brute-froce-attack-timing.jpg)
+![step3_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step3_5.png)
+![step3_6](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Offensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/step3_6.png)
 
+---
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
+### Citations and References:
+
+#### Splunk Documentation:
+- Splunk Enterprise: [eval-command](https://docs.splunk.com/Documentation/Splunk/8.2.2/SearchReference/Eval)
+
+#### Special thanks:
+© Trilogy Education Services, a 2U, Inc., Instructor Jerry and TAs; Matt, Jansen, Micheal.
+
+© The University of Texas at Austin Boot Camp, The Cybersecurity program.
+
+---
