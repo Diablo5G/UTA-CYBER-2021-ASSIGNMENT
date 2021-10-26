@@ -6,7 +6,7 @@
 
 
 ## Windows Server Logs
-#### Reports: Design the following reports to assist VSI with quickly identifying specific information.
+#### Reports: Design the following reports to assist VSI with quickly identifying specific information
  1. A report with a table of signatures with associated SignatureID.
       
  ```bash
@@ -46,37 +46,49 @@ source="windows_server_logs.csv" |  top status
 ![Report_W_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Report_W_3.png)
 
 
-#### Alerts: Design the following alerts to notify VSI of suspicious activity.
+#### Alerts: Design the following alerts to notify VSI of suspicious activity
 
 1. Determine an appropriate baseline and threshold for hourly level of failed Windows activity. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.
        
-	- `source="windows_server_logs.csv"  status=failure `
-	![Search](/Images/Part_1-Activity/P1_failed_Windows_activity.PNG)
-	- The average activity per hour is approximately six events. Therefore the threshold is set at 20 to avoid false positives.
+```bash
+source="windows_server_logs.csv" status=failure
+```
 
-	- To create alert, change the search to one hour and click
+![Search_A_1](/Images/Part_1-Activity/P1_failed_Windows_activity.PNG)
 
-		- Set to run every hour.
+   - The average activity per hour is shortly six events. Therefore the threshold is up to the individual group, so we should set it in the range of 20-25 to avoid false positives.
 
-		- Set alert to trigger when count is greater than chosen threshold of (20).
+   - To create alert, change the search to one hour and click **Save As > Alert
 
-		- Add action **Send email** to SOC@VSI-company.com.
-	![Alert](/Images/Part_1-Activity/P1_Alert_for_Failed_Windows_Activity.PNG)
+     - Set to run every hour.
+
+     - Set alert to trigger when count is greater than chosen threshold (25).
+
+     - Add action **Send email** to SOC@VSI-company.com.
+
+![Alert_1](/Images/Part_1-Activity/P1_Alert_for_Failed_Windows_Activity.PNG)
+
           
 2. Determine a baseline and threshold for hourly count of the signature **an account was successfully logged on**. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.
 
-	- `source="windows_server_logs.csv" signature="An account was successfully logged on"`
-    ![Search](/Images/Part_1-Activity/P1_search_Signatures_with_successfully_logged_on.PNG)
-	- The average activity per hour is approximately 12 events. Therefore the threshold is set at 30.
+```bash
+source="windows_server_logs.csv" signature="An account was successfully logged on"
+```
 
-	- To create alert, change the search to one hour
+![Search_A_2](/Images/Part_1-Activity/P1_search_Signatures_with_successfully_logged_on.PNG)
+
+   - The average activity per hour is around 12 events. Therefore the threshold is up to the individual group, so we should set it in the range of 30-50
+
+   - To create alert, change the search to one hour and click **Save AS > Alert**
 	
-	    - Set to run every hour.
+     - Set to run every hour.
 
-	    - Set alert to trigger when count is greater than chosen threshold of (30).
+     - Set alert to trigger when count is greater than chosen threshold (40).
 
-	    - Add action **Send email** to SOC@VSI-company.com.
-    ![Alert](/Images/Part_1-Activity/P1_Alert_Signatures_with_successfully_logged_on.PNG)      
+     - Add action **Send email** to SOC@VSI-company.com.
+	    
+![Alert_2](/Images/Part_1-Activity/P1_Alert_Signatures_with_successfully_logged_on.PNG)      
+
                   
 3. Determine a baseline and threshold for hourly count of the signature **a user account was deleted**. Design the alert based on the corresponding SignatureID. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.   
 		
@@ -95,7 +107,7 @@ source="windows_server_logs.csv" |  top status
 	    - Add action **Send email** to SOC@VSI-company.com.
     ![Alert](/Images/Part_1-Activity/P1_Alert_a_user_account_was_deleted.PNG)              
                    
-**Visualizations and Dashboards**: Design the following visualizations and add them to a dashboard called Windows Server Monitoring:
+#### Visualizations and Dashboards: Design the following visualizations and add them to a dashboard called Windows Server Monitoring
 
 1. A line chart that displays the different `signature` field values over time.
 
@@ -155,9 +167,8 @@ On your dashboard, add the ability to change the time range for all your visuali
 
 
 
-### Apache Web Server Logs
-
-**Reports**: Design the following reports to assist VSI with quickly identifying specific information.
+## Apache Web Server Logs
+#### Reports: Design the following reports to assist VSI with quickly identifying specific information
 
 1. A report that shows a table of the different HTTP methods (GET, POST, HEAD, etc).
 
@@ -178,7 +189,7 @@ On your dashboard, add the ability to change the time range for all your visuali
 	![Report](/Images/Part_2-Activity/P2_Report_the_count_of_the_HTTP_response_codes.PNG)	
 	
 
-**Alerts**: Design the following alerts:
+#### Alerts: Design the following alerts:
 
 1. Determine a baseline and threshold for hourly count of activity from a country other than the United States. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.
 
@@ -214,7 +225,7 @@ On your dashboard, add the ability to change the time range for all your visuali
 	- Add action **Send email** to SOC@VSI-company.com.
    ![Alert](/Images/Part_2-Activity/P2_Alert_baseline_and_threshold_for_hourly_count_of_the_HTTP_POST_method.PNG) 		
 
-**Visualizations and Dashboards**: Design the following visualization and add them to a dashboard called Apache WebServer Monitoring.
+#### Visualizations and Dashboards: Design the following visualization and add them to a dashboard called Apache WebServer Monitoring
 
 1. A line chart that displays the different HTTP `methods` field over time.
 
@@ -265,9 +276,18 @@ On your dashboard, add the ability to change the time range for all your visuali
 ![Dashboard](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad-2.PNG)
 
 
-
+---
 ---
 
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+### Citations and References:
+
+#### Splunk Documentation:
+- Splunk Enterprise: [eval-command](https://docs.splunk.com/Documentation/Splunk/8.2.2/SearchReference/Eval)
+
+#### Special thanks:
+© Trilogy Education Services, a 2U, Inc., Instructor Jerry Arnold and TAs; Matt McNew, Jansen Russell, Micheal Stephenson.
+
+© The University of Texas at Austin Boot Camp, The Cybersecurity program.
 
 ---
