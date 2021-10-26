@@ -1,29 +1,52 @@
-## Solution Guide: Part 1 - Create your SOC
+<img align="left" width="140" height="120" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/Splunk%20icon.svg" alt="Splunk icon">
 
-### Windows Server Logs
+# Solution Guide: Part 1 - Master of the SOC
 
-**Reports**: Design the following reports to assist VSI with quickly identifying specific information.
+---
+
+
+## Windows Server Logs
+#### Reports: Design the following reports to assist VSI with quickly identifying specific information.
  1. A report with a table of signatures with associated SignatureID.
       
-   	- `source="windows_server_logs.csv"  | table signature signature_id | dedup signature`
-	![Search](/Images/Part_1-Activity/P1_search_Signatures_with_ID.PNG)
-	![Report](/Images/Part_1-Activity/P1_Report_Signatures_with_ID.PNG)
+ ```bash
+ source="windows_server_logs.csv"  | table signature signature_id | dedup signature
+ ```
+
+![Search_W_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_W_1.png)
+
+   - Select **Save As > Report**
+
+![Report_W_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Report_W_1.png)
   
 
 2. A report that provides the count and percent of the severity.
 
-	- `source="windows_server_logs.csv" |  top severity`
-	![Search](/Images/Part_1-Activity/P1_search_top_severity.PNG)
-	![Report](/Images/Part_1-Activity/P1_Report_top_severity.PNG)
+```bash
+source="windows_server_logs.csv" |  top severity
+```
+	
+![Search_W_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_W_2.png)
+
+   - Select **Save As > Report**
+
+![Report_W_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Report_W_2.png)
+
 
 3. A report that provides a comparison between the success and failure of Windows activities.
 
-	- `source="windows_server_logs.csv" | top  status`
-	![Search](/Images/Part_1-Activity/P1_search_top_status.PNG)
-	![Report](/Images/Part_1-Activity/P1_Report_Windows_status.PNG)
+```bash
+source="windows_server_logs.csv" |  top status
+```
+	
+![Search_W_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_W_3.png)
+
+   - Select **Save As > Report**
+
+![Report_W_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Report_W_3.png)
 
 
-**Alerts**: Design the following alerts to notify VSI of suspicious activity.
+#### Alerts: Design the following alerts to notify VSI of suspicious activity.
 
 1. Determine an appropriate baseline and threshold for hourly level of failed Windows activity. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.
        
