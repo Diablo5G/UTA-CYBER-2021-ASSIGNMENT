@@ -1,4 +1,4 @@
-## Solution Guide: Part 1 - Master of the SOC
+## Solution Guide: Part 1 - Create your SOC
 
 ### Windows Server Logs
 
