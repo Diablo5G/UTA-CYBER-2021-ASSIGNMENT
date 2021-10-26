@@ -1,7 +1,11 @@
-## Solution Guide: Part 2 - Defend Your SOC
-   
-### Windows Server Logs
+<img align="left" width="140" height="120" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/Splunk%20icon.svg" alt="Splunk icon">
 
+# Solution Guide: Part 2 - Defend Your SOC
+
+---
+ 
+ 
+## Windows Server Logs
 #### Report Analysis for Severity
 
 Did you detect any suspicious changes in severity?
@@ -243,14 +247,6 @@ Did you detect a suspicious volume of deleted accounts?
 ![Apache WebServer Monitoring Dashboad_attack_logs-2](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad_attack_logs-2.PNG)
 
 ---
-    
-
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
----
-
-
-
 ---
 
 ### Citations and References:
@@ -259,7 +255,7 @@ Did you detect a suspicious volume of deleted accounts?
 - Splunk Enterprise: [eval-command](https://docs.splunk.com/Documentation/Splunk/8.2.2/SearchReference/Eval)
 
 #### Special thanks:
-© Trilogy Education Services, a 2U, Inc., Instructor Jerry and TAs; Matt, Jansen, Micheal.
+© Trilogy Education Services, a 2U, Inc., Instructor Jerry Arnold and TAs; Matt McNew, Jansen Russell, Micheal Stephenson.
 
 © The University of Texas at Austin Boot Camp, The Cybersecurity program.
 
