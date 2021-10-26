@@ -92,14 +92,3 @@ Note: This is a public-facing windows server that VSI employees access.
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 
 ---
-  
-## :sunglasses: `Ketan Vithal Patel` :sunglasses:  
-
-
-### `Monday, August 9, 2021 -- UofT Cybersecurity - Boot Camp`
-#### :rose::rose:`Jai Shri Swaminarayan`:rose::rose:
-```
-હરે કૃષ્ણ હરે કૃષ્ણ, કૃષ્ણ કૃષ્ણ હરે હરે |  Hare Krishna Hare Krishna, Krishna Krishna Hare Hare |
-હરે રામ હરે રામ, રામ રામ હરે હરે ||   Hare Ram Hare Ram, Ram Ram Hare Hare ||
-```
----  
