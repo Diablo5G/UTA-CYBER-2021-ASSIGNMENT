@@ -1,6 +1,6 @@
-<img align="left" width="140" height="120" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/Splunk%20icon.svg" alt="Splunk icon">
+<img align="left" width="320" height="90" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Splunk_logo.png">
 
-# Solution Guide: Part 2 - Defend Your SOC
+# Solution : Part 2 - Defend Your SOC
 
 ---
  
@@ -247,16 +247,4 @@ Did you detect a suspicious volume of deleted accounts?
 ![Apache WebServer Monitoring Dashboad_attack_logs-2](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad_attack_logs-2.PNG)
 
 ---
----
-
-### Citations and References:
-
-#### Splunk Documentation:
-- Splunk Enterprise: [eval-command](https://docs.splunk.com/Documentation/Splunk/8.2.2/SearchReference/Eval)
-
-#### Special thanks:
-© Trilogy Education Services, a 2U, Inc., Instructor Jerry Arnold and TAs; Matt McNew, Jansen Russell, Micheal Stephenson.
-
-© The University of Texas at Austin Boot Camp, The Cybersecurity program.
-
 ---
