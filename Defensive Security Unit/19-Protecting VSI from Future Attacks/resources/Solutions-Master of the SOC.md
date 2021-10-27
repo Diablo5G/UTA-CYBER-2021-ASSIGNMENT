@@ -1,4 +1,4 @@
-<img align="left" width="140" height="120" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/18-Lets%20Go%20Splunking!/Images/Splunk%20icon.svg" alt="Splunk icon">
+<img align="left" width="320" height="90" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Splunk_logo.png">
 
 # Solution Guide: Part 1 - Master of the SOC
 
@@ -54,7 +54,7 @@ source="windows_server_logs.csv" |  top status
 source="windows_server_logs.csv" status=failure
 ```
 
-![Search_A_1](/Images/Part_1-Activity/P1_failed_Windows_activity.PNG)
+![Search_A_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_A_1.png)
 
    - The average activity per hour is shortly six events. Therefore the threshold is up to the individual group, so we should set it in the range of 20-25 to avoid false positives.
 
@@ -66,7 +66,7 @@ source="windows_server_logs.csv" status=failure
 
      - Add action **Send email** to SOC@VSI-company.com.
 
-![Alert_1](/Images/Part_1-Activity/P1_Alert_for_Failed_Windows_Activity.PNG)
+![Alert_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Alert_1.png)
 
           
 2. Determine a baseline and threshold for hourly count of the signature **an account was successfully logged on**. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.
@@ -75,7 +75,7 @@ source="windows_server_logs.csv" status=failure
 source="windows_server_logs.csv" signature="An account was successfully logged on"
 ```
 
-![Search_A_2](/Images/Part_1-Activity/P1_search_Signatures_with_successfully_logged_on.PNG)
+![Search_A_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_A_2.png)
 
    - The average activity per hour is around 12 events. Therefore the threshold is up to the individual group, so we should set it in the range of 30-50
 
@@ -87,83 +87,128 @@ source="windows_server_logs.csv" signature="An account was successfully logged o
 
      - Add action **Send email** to SOC@VSI-company.com.
 	    
-![Alert_2](/Images/Part_1-Activity/P1_Alert_Signatures_with_successfully_logged_on.PNG)      
+![Alert_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Alert_2.png)      
 
                   
 3. Determine a baseline and threshold for hourly count of the signature **a user account was deleted**. Design the alert based on the corresponding SignatureID. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.   
 		
-	- `source="windows_server_logs.csv" signature_id=4726`
-    ![Search](/Images/Part_1-Activity/P1_search_a_user_account_was_deleted.PNG)
-	- The average activity per hour is approximately 13 events.
+```bash
+source="windows_server_logs.csv" signature_id=4726
+```
+
+![Search_A_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_A_3.png)
+
+	- The average activity per hour is roughly 13 events.
 
 	- The threshold range should be between 30-50.
 
-	- To create alert, change the search to one hour
+	- To create alert, change the search to one hour and click **Save AS > Alert**
 	
 	    - Set to run every hour.
 
-	    - Set alert to trigger when count is greater than chosen threshold of (30).
+	    - Set alert to trigger when count is greater than 30.
 
 	    - Add action **Send email** to SOC@VSI-company.com.
-    ![Alert](/Images/Part_1-Activity/P1_Alert_a_user_account_was_deleted.PNG)              
+
+![Alert_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Alert_3.png)     
+
                    
 #### Visualizations and Dashboards: Design the following visualizations and add them to a dashboard called Windows Server Monitoring
 
 1. A line chart that displays the different `signature` field values over time.
 
-	- `source="windows_server_logs.csv" | timechart span=1h count by signature`
-    ![Search](/Images/Part_1-Activity/P1_search_different_signature_field_values_over_time.PNG)
-    - Select **Visualizations** > **Line Chart**.
-	![Line_Chart](/Images/Part_1-Activity/P1_Dashboard_Signature.PNG)
+```bash
+source="windows_server_logs.csv" | timechart span=1h count by signature
+```
+
+![Search_V_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_V_1.png)
+
+
+   - Select **Visualizations** > **Line Chart**.
+   - Select the following: **Save As** > **New Dashboard Panel** > **Visualizations Windows Server Monitoring** > **Save to Dashboard**
+
+![Line_Chart_V_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Line_Chart_V_1.png)
 	
 
 
 2. A line chart that displays the different `user` field values over time. 
 
-	- `source="windows_server_logs.csv" | timechart span=1h count by user`
-    ![Search](/Images/Part_1-Activity/P1_search_different_user_field_values_over_time.PNG)
-    - Select **Visualizations** > **Line Chart**.
-    ![Line_Chart](/Images/Part_1-Activity/P1_Dashboard_User.PNG)
-	
+```bash
+source="windows_server_logs.csv" | timechart span=1h count by user
+```
 
+![Search_V_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_V_2.png)
+
+   - Select **Visualizations** > **Line Chart**.
+   - Select the following: **Save As** > **Existing Dashboard Panel** > **Visualizations Windows Server Monitoring** > **Save to Dashboard**
+
+![Line_Chart_V_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Line_Chart_V_2.png)
+	
 
 
 3. A bar, column, or pie chart that illustrates the count of different signatures.
 
-	- `source="windows_server_logs.csv" | top limit=10 signature`
-    ![Search](/Images/Part_1-Activity/P1_search_the_count_of_different_signatures.PNG)
-	- Select **Visualizations** > **Bar/Column/Pie Chart**.
-    ![Pie_Chart](/Images/Part_1-Activity/P1_Dashboard_Different_Signatures.PNG)
+```bash
+source="windows_server_logs.csv" | top limit=10 signature
+```
+
+![Search_V_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_V_3.png)
+
+   - Select **Visualizations** > **Bar/Column/Pie Chart**.
+   - Select the following: **Save As** > **Existing Dashboard Panel** > **Visualizations Windows Server Monitoring** > **Save to Dashboard**
+
+![Pie_Chart_V_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Pie_Chart_V_3.png)
 	
 
 
 4. A bar, column, or pie chart that illustrates the count of different users.
 
-	- `source="windows_server_logs.csv" | top limit=10 user`
-    ![Search](/Images/Part_1-Activity/P1_search_the_count_of_different_users.PNG)
-	- Select **Visualizations** > **Bar/Column/Pie Chart**.
-    ![Pie_Chart](/Images/Part_1-Activity/P1_Dashboard_Different_Users.PNG)
+```bash
+source="windows_server_logs.csv" | top limit=10 user
+```
+
+![Search_V_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_V_4.png)
+
+   - Select **Visualizations** > **Bar/Column/Pie Chart**.
+   - Select the following: **Save As** > **Existing Dashboard Panel** > **Visualizations Windows Server Monitoring** > **Save to Dashboard** 
+    
+![Pie_Chart_V_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Pie_Chart_V_4.png)
 	
 
 5. A statistical chart that illustrates the count of different users.
 
-	- `source="windows_server_logs.csv" | top limit=10 user`
-    ![Stats_Chart](/Images/Part_1-Activity/P1_Dashboard_Different_Users_Stats.PNG)
+```bash
+source="windows_server_logs.csv" | top limit=10 user
+```
+
+![Stats_Chart_V_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Stats_Chart_V_5.png)
 	
+   - Select **Statistics** > **Save As** > **Existing Dashboard Panel** > **Visualizations Windows Server Monitoring** > **Save to Dashboard**
 
 
 6. One single value visualization of your choice: radial gauge, marker gauge, etc.  
-			
-	![Single_Value](/Images/Part_1-Activity/P1_Dashboard_Single_Value_Visualization-6_Action-Deleted.PNG)
-    ![Single_Value](/Images/Part_1-Activity/P1_Dashboard_Single_Value_Visualization-6_EventCode.PNG)
 
 
-On your dashboard, add the ability to change the time range for all your visualizations.
+```bash
+source="windows_server_logs.csv" signature_id=4726 | stats count as total
+```
 
-![Dashboard](/Images/Part_1-Activity/P1_Windows_Server_Monitoring_DashBoard.PNG)
-![Dashboard](/Images/Part_1-Activity/P1_Windows_Server_Monitoring_DashBoard-2.PNG)
+   - Select **Visualizations** > **Radial Gauge** > **Format** > **Color Ranges** > **Manual** our custom. 
+
+![Radial Gauge_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Radial%20Gauge_1.png)
+
+   - Select the following: **Save As** > **Existing Dashboard Panel** > **Visualizations Windows Server Monitoring** > **Save to Dashboard**
+   - On our dashboard, add the ability to change the time range for all your visualizations.
+
+![Dashboard_V_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_1.png)
+![Dashboard_V_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_2.png)
+![Dashboard_V_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_3.png)
 
 ---
+
+
+
+
 
 
 
@@ -277,17 +322,4 @@ On your dashboard, add the ability to change the time range for all your visuali
 
 
 ---
----
-
-
-### Citations and References:
-
-#### Splunk Documentation:
-- Splunk Enterprise: [eval-command](https://docs.splunk.com/Documentation/Splunk/8.2.2/SearchReference/Eval)
-
-#### Special thanks:
-© Trilogy Education Services, a 2U, Inc., Instructor Jerry Arnold and TAs; Matt McNew, Jansen Russell, Micheal Stephenson.
-
-© The University of Texas at Austin Boot Camp, The Cybersecurity program.
-
 ---
