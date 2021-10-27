@@ -28,7 +28,7 @@ The Splunk Enterprise app located in the Ubuntu VM.
 - Our Networking team has provided you with past logs to help you develop baselines and create reports, alerts, and dashboards.
 
 
-:white_check_mark: [Solutions-Master of the SOC.md](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/resources/Solutions-Master%20of%20the%20SOC.md)
+   :white_check_mark: [Solutions-Master of the SOC.md](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/resources/Solutions-Master%20of%20the%20SOC.md)
 
 
 
@@ -41,17 +41,16 @@ The Splunk Enterprise app located in the Ubuntu VM.
 - These monitoring solutions will also help VSI create mitigation strategies to protect the organization.
 
 
-:white_check_mark: [Solutions-Defend your SOC.md](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/resources/Solutions-Defend%20your%20SOC.md)
+   :white_check_mark: [Solutions-Defend your SOC.md](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/resources/Solutions-Defend%20your%20SOC.md)
 
 
 
 ### Activity File: Part 3 - Protecting VSI from Future Attacks
 
-We set up our SOC and monitored attacks from JobeCorp. Now, we will need to design mitigation strategies to protect VSI from future attacks. 
-We are tasked with using our findings from the Master of SOC activity to answer questions about mitigation strategies.
+- We set up our SOC and monitored attacks from JobeCorp. Now, we will need to design mitigation strategies to protect VSI from future attacks. 
 
 
-:white_check_mark: [Solutions-Protecting VSI.md](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/tree/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/resources)
+   :white_check_mark: [Solutions-Protecting VSI.md](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/tree/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/resources)
 
 
 
