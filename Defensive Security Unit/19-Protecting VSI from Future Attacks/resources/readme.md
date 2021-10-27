@@ -17,7 +17,7 @@ The Splunk Enterprise app located in the Ubuntu VM.
 - [Apache Webserver Logs](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/resources/apache_logs.txt)
 - [Apache Webserver Attack Logs](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/resources/apache_attack_logs.txt)
 
-#### Activity File: Part 1 - Master of the SOC
+### Activity File: Part 1 - Master of the SOC
 
 - Each group is playing the role of an SOC analyst at a small company called Virtual Space Industries (VSI), which designs virtual reality programs for businesses.
 
@@ -32,7 +32,7 @@ The Splunk Enterprise app located in the Ubuntu VM.
 
 
 
-#### Activity File: Part 2 - Defend Your SOC
+### Activity File: Part 2 - Defend Your SOC
 
 - VSI recently experienced several cyberattacks, likely from their adversary JobeCorp.
 
@@ -45,7 +45,7 @@ The Splunk Enterprise app located in the Ubuntu VM.
 
 
 
-#### Activity File: Part 3 - Protecting VSI from Future Attacks
+### Activity File: Part 3 - Protecting VSI from Future Attacks
 
 We set up our SOC and monitored attacks from JobeCorp. Now, we will need to design mitigation strategies to protect VSI from future attacks. 
 We are tasked with using our findings from the Master of SOC activity to answer questions about mitigation strategies.
