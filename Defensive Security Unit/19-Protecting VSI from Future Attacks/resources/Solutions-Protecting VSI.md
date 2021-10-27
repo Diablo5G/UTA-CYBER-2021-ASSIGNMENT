@@ -1,8 +1,10 @@
-# Unit 19 Homework: Protecting VSI from Future Attacks
+<img align="left" width="320" height="90" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Splunk_logo.png">
+
+# Solution : Part 3 - Protecting VSI from Future Attacks 
+
+---
 
 ### Part 1: Windows Server Attack
-
-Note: This is a public-facing windows server that VSI employees access.
  
 #### Question 1
 - Several users were impacted during the attack on March 25th.
@@ -68,17 +70,4 @@ Note: This is a public-facing windows server that VSI employees access.
 
 
 ---
----
-
-
-### Citations and References:
-
-#### Splunk Documentation:
-- Splunk Enterprise: [eval-command](https://docs.splunk.com/Documentation/Splunk/8.2.2/SearchReference/Eval)
-
-#### Special thanks:
-© Trilogy Education Services, a 2U, Inc., Instructor Jerry Arnold and TAs; Matt McNew, Jansen Russell, Micheal Stephenson.
-
-© The University of Texas at Austin Boot Camp, The Cybersecurity program.
-
 ---
