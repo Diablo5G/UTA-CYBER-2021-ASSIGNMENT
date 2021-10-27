@@ -98,17 +98,17 @@ source="windows_server_logs.csv" signature_id=4726
 
 ![Search_A_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_A_3.png)
 
-	- The average activity per hour is roughly 13 events.
+   - The average activity per hour is roughly 13 events.
 
-	- The threshold range should be between 30-50.
+   - The threshold range should be between 30-50.
 
-	- To create alert, change the search to one hour and click **Save AS > Alert**
+   - To create alert, change the search to one hour and click **Save AS > Alert**
 	
-	    - Set to run every hour.
+     - Set to run every hour.
 
-	    - Set alert to trigger when count is greater than 30.
+     - Set alert to trigger when count is greater than 30.
 
-	    - Add action **Send email** to SOC@VSI-company.com.
+     - Add action **Send email** to SOC@VSI-company.com.
 
 ![Alert_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Alert_3.png)     
 
