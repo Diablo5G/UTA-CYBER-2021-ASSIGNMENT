@@ -50,7 +50,7 @@ The Splunk Enterprise app located in the Ubuntu VM.
 - We set up our SOC and monitored attacks from JobeCorp. Now, we will need to design mitigation strategies to protect VSI from future attacks. 
 
 
-   :white_check_mark: [Solutions-Protecting VSI.md](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/tree/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/resources)
+   :white_check_mark: [Solutions-Protecting VSI.md](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/resources/Solutions-Protecting%20VSI.md)
 
 
 
