@@ -177,7 +177,7 @@ Did you detect a suspicious volume of deleted accounts?
 
   - **User J**: Started around `11 a.m. and ended at 1 p.m. on March 25th.` Peak count was `196`, and the total for the two hours was `(196 + 82 = 278)`.  
 
-![Suspicious_4](https://github.com/)
+![Suspicious_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Suspicious_4.png)
     
 
 #### Dashboard Analysis for Signatures with Bar, Graph, Pie Charts
@@ -298,11 +298,11 @@ Did you detect a suspicious volume of deleted accounts?
     
 ![1296](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/1296.png)  
  
-    - The `POST` method was used, starting at `8 p.m. and ending at 9 p.m.` The peak count was `1,296`.
+  - The `POST` method was used, starting at `8 p.m. and ending at 9 p.m.` The peak count was `1,296`.
     
 ![729](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/729.png)
 
-    - The `GET` method was used, starting at `6 p.m. and ending at 7 p.m.` The peak count was `729`.    
+  - The `GET` method was used, starting at `6 p.m. and ending at 7 p.m.` The peak count was `729`.    
 
 #### Dashboard Analysis for Cluster Map
   
@@ -314,17 +314,17 @@ Did you detect a suspicious volume of deleted accounts?
 
 - What is the count of that country, city?
   
-  - **ANS:** 
-    - When zoomed in, we can see the cities in Ukraine are:  
-      - **Kiev**: Count of `439`
+  - **ANS:** When zoomed in, we can see the cities in Ukraine are:  
+  
+    - **Kiev**: Count of `439`
 
 ![Geostats_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Geostats_1.png)
 
-      - **Kharkiv**: Count of `433` 
+   - **Kharkiv**: Count of `433` 
       
 ![Geostats_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Geostats_2.png)
 
-      - **Lvov**: Count of `5`  
+   - **Lvov**: Count of `5`  
 
 ![Geostats_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Geostats_3.png)
 
