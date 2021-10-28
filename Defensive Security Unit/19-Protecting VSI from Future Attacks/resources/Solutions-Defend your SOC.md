@@ -26,7 +26,7 @@ to:
    Informational: 79.78%
    ```
 
-![Report_WA_1](/Images/Part_1-Activity/P1_Report_top_severity_windows_server_attack_logs.PNG)
+![Report_WA_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Report_WA_1.png)
 
 - This indicates an increase in the high severity cases.
 
@@ -51,7 +51,7 @@ to:
    failure: 1.56%
    ```
 
-![Report_WA_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Report_W_3.png)
+![Report_WA_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Report_WA_2.png)
 
 - This indicates that there is not a major change in the cumulative failure of events. 
    
