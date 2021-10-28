@@ -198,7 +198,7 @@ source="windows_server_logs.csv" signature_id=4726 | stats count as total
 ![Radial Gauge_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Radial%20Gauge_1.png)
 
    - Select the following: **Save As** > **Existing Dashboard Panel** > **Visualizations Windows Server Monitoring** > **Save to Dashboard**
-   - On our dashboard, add the ability to change the time range for all your visualizations.
+   - On our dashboard, 
 
 ![Dashboard_V_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_1.png)
 ![Dashboard_V_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_2.png)
@@ -221,11 +221,11 @@ source="windows_server_logs.csv" signature_id=4726 | stats count as total
 source="apache_logs.txt" | top method
 ```
 
-![Search_B_1](/Images/Part_2-Activity/P2_search_Differnt_HTTP_Methods.PNG)
+![Search_B_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_B_1.png)
 
    - Select **Save As > Report**
 
-![Report_X_1](/Images/Part_2-Activity/P2_Report_Differnt_HTTP_Methods.PNG)	
+![Report_X_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Report_X_1.png)	
 
 2. A report that shows the top 10 domains that referred to VSI's website.
 
@@ -233,11 +233,11 @@ source="apache_logs.txt" | top method
 source="apache_logs.txt" | top limit=10 referer_domain
 ```
 	
-![Search_B_2](/Images/Part_2-Activity/P2_search_Top_10_Domains.PNG)
+![Search_B_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_B_2.png)
 	   
    - Select **Save As > Report**
 
-![Report_X_2](/Images/Part_2-Activity/P2_Report_Top_10_Domains.PNG)	
+![Report_X_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Report_X_2.png)	
 
 3. A report that shows the count of the HTTP response codes.
 	
@@ -245,11 +245,11 @@ source="apache_logs.txt" | top limit=10 referer_domain
 source="apache_logs.txt" | top status
 ```
 
-![Search_B_3](/Images/Part_2-Activity/P2_search_the_count_of_the_HTTP_response_codes.PNG)
+![Search_B_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_B_3.png)
 	
    - Select **Save As > Report**
 
-![Report_X_3](/Images/Part_2-Activity/P2_Report_the_count_of_the_HTTP_response_codes.PNG)	
+![Report_X_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Report_X_3.png)	
 	
 
 
@@ -261,7 +261,7 @@ source="apache_logs.txt" | top status
 source="apache_logs.txt"  | iplocation clientip | where Country!="United States"
 ```
 
-![Search_U_1](/Images/Part_2-Activity/P2_search_baseline_and_threshold_for_hourly_count_of_activity_from_a_country_other_than_the_United_States.PNG)		
+![Search_U_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_U_1.png)		
 	
   - The average activity per hour is approximately 80.
 
@@ -275,7 +275,7 @@ source="apache_logs.txt"  | iplocation clientip | where Country!="United States"
 
   - Add action **Send email** to SOC@VSI-company.com.
 
-![Alert_4](/Images/Part_2-Activity/P2_Alert_baseline_and_threshold_for_hourly_count_of_activity_from_a_country_other_than_the_United_States.PNG)             
+![Alert_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Alert_4.png)             
 
 2. Determine a baseline and threshold for hourly count of the HTTP POST method. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.
 
@@ -283,7 +283,7 @@ source="apache_logs.txt"  | iplocation clientip | where Country!="United States"
 source="apache_logs.txt" method=POST
 ```
 	
-![Search_U_2](/Images/Part_2-Activity/P2_search_baseline_and_threshold_for_hourly_count_of_the_HTTP_POST_method.PNG)
+![Search_U_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_U_2.png)
 
   - The average activity per hour is roughly two.
 
@@ -297,7 +297,7 @@ source="apache_logs.txt" method=POST
 
   - Add action **Send email** to SOC@VSI-company.com.
   
-![Alert_5](/Images/Part_2-Activity/P2_Alert_baseline_and_threshold_for_hourly_count_of_the_HTTP_POST_method.PNG) 		
+![Alert_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Alert_5.png) 		
 
 
 #### Visualizations and Dashboards: Design the following visualization and add them to a dashboard called Apache WebServer Monitoring
@@ -308,12 +308,12 @@ source="apache_logs.txt" method=POST
 source="apache_logs.txt" | timechart span=1h count by method
 ```
 
-![Search_D_1](/Images/Part_2-Activity/P2_search_different_HTTP_methods_field_over_time.PNG)	
+![Search_D_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_D_1.png)	
 	
   - Select **Visualizations** > **Line Chart**.
   - Select the following: **Save As** > **New Dashboard** > **Visualizations Apache WebServer Monitoring** > **Save to Dashboard**
 
-![Line_Chart_V_3](/Images/Part_2-Activity/P2_Dashboard_different_HTTP_methods_field_over_time.PNG)
+![Line_Chart_V_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Line_Chart_V_3.png)
 
 2. A geographical map showing the location based on the `clientip` field.
 
@@ -321,12 +321,12 @@ source="apache_logs.txt" | timechart span=1h count by method
 source="apache_logs.txt" | iplocation clientip | geostats count
 ```
 
-![Search_D_2](/Images/Part_2-Activity/P2_search_location_based_on_the_clientip_field.PNG)
+![Search_D_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_D_2.png)
     
   - Select **Visualizations** > **Geostats**.
   - Select the following: **Save As** > **New Dashboard** > **Visualizations Apache WebServer Monitoring** > **Save to Dashboard**
 
-![Geostats](/Images/Part_2-Activity/P2_Dashboard_location_based_on_the_clientip_field.PNG)
+![Geostats](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Geostats.png)
 
 3. A bar, column, or pie chart that displays the count of different URIs.
 
@@ -334,12 +334,12 @@ source="apache_logs.txt" | iplocation clientip | geostats count
 source="apache_logs.txt" | top limit=10 uri
 ```
 
-![Search_D_3](/Images/Part_2-Activity/P2_search_counts_of_different_URIs.PNG)
+![Search_D_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_D_3.png)
 
-  - Select **Visualizations** > **Bar/Column/Pie Chart**.
+  - Select **Visualizations** > **Bar Chart**.
   - Select the following: **Save As** > **New Dashboard** > **Visualizations Apache WebServer Monitoring** > **Save to Dashboard**
 
-![Bar_Chart](/Images/Part_2-Activity/P2_Dashboard_counts_of_different_URIs.PNG)
+![Bar_Chart](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Bar_Chart.png)
 
 4. A bar, column, or pie chart that displays the counts of the top 10 countries.
 
@@ -347,11 +347,12 @@ source="apache_logs.txt" | top limit=10 uri
 source="apache_logs.txt"  | iplocation clientip | top limit=10 Country
 ```
 
-![Search_D_4](/Images/Part_2-Activity/P2_search_counts_of_the_top_10_countries.PNG)
+![Search_D_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_D_4.png)
 
-  - Select **Visualizations** > **Bar/Column/Pie Chart**.
+  - Select **Visualizations** > **Pie Chart**.
+  - Select the following: **Save As** > **New Dashboard** > **Visualizations Apache WebServer Monitoring** > **Save to Dashboard**
 
-![Pie_Chart_V_5](/Images/Part_2-Activity/P2_search_counts_of_the_top_10_countries.PNG)
+![Pie_Chart_V_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Pie_Chart_V_5.png)
 
 5. A statistical chart that illustrates the count of different user agents.
 
@@ -359,22 +360,32 @@ source="apache_logs.txt"  | iplocation clientip | top limit=10 Country
 source="apache_logs.txt"  |  top limit=10 useragent
 ```
     
-![Search_D_5](/Images/Part_2-Activity/P2_search_the_count_of_different_user_agents.PNG)
-![Stats_Chart_V_6](/Images/Part_2-Activity/P2_Dashboard_the_count_of_different_user_agents.PNG)
+![Search_D_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Search_D_5.png)
+
+![Stats_Chart_V_6](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Stats_Chart_V_6.png)
+
+   - Select **Statistics** > **Save As** > **Existing Dashboard Panel** > **Visualizations Apache WebServer Monitoring** > **Save to Dashboard**
 
 
 6. One single value visualization of your choice: radial gauge, marker gauge, etc.     
 
-![Search_D_6](/Images/Part_2-Activity/P2_Single_Value_Visualization-6_method-GET.PNG)
-![Single_Value_V_1](/Images/Part_2-Activity/P2_Dashboard_Single_Value_Visualization-6_method-GET.PNG)
-![Search_D_7](/Images/Part_2-Activity/P2_Single_Value_Visualization-6_status-404.PNG)
-![Single_Value_V_2](/Images/Part_2-Activity/P2_Dashboard_Single_Value_Visualization-6_status-404.PNG)
-		
-On your dashboard, add the ability to change the time range for all your visualizations.  
+```bash
+source="apache_logs.txt" method=GET | stats count as total
+```
 
-![Dashboard_V_4](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad.PNG)
-![Dashboard_V_5](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad-1.PNG)
-![Dashboard_V_6](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad-2.PNG)
+   - Select **Visualizations** > **Radial Gauge** > **Format** > **Color Ranges** > **Manual** our custom. 
+
+![Radial Gauge_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Radial%20Gauge_2.png)
+
+   - Select the following: **Save As** > **Existing Dashboard Panel** > **Visualizations Apache WebServer Monitoring** > **Save to Dashboard**
+   - On our dashboard, add the ability to change the time range for all your visualizations.
+
+	
+On our dashboard,  
+
+![Dashboard_V_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_4.png)
+![Dashboard_V_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_5.png)
+![Dashboard_V_6](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_6.png)
 
 
 ---
