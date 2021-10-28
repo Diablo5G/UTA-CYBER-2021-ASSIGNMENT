@@ -134,7 +134,7 @@ Did you detect a suspicious volume of deleted accounts?
 
 - What time did it start and stop for each signature? What is the peak count of the different signatures?
 
-![Suspicious_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Suspicious_4.png)
+![Suspicious_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Suspicious_5.png)
 
   **ANS:** 
 
