@@ -61,26 +61,21 @@ to:
 
 #### Alert Analysis for Failed Windows Activity
 
-Did you detect a suspicious volume of failed activity?
+Did you detect a suspicious volume of failed activity? If so, what was the count of events in the hour(s) it occurred? When did it occur?
 
-If so, what was the count of events in the hour(s) it occurred? When did it occur?
+![Alert_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Alert_1.png)
 
-![Alert_Failed_Windows_Activity](/Images/Part_1-Activity/P1_Alert_for_Failed_Windows_Activity.PNG)
+![Suspicious_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Suspicious_1.png)
 
-- **ANS:** There is some potential suspicious activity for failed activity between 8 a.m. and 9 a.m. on Weds, March 25th.
-
-![Suspicious_Failed_Activity](/Images/Attack_Logs/P2-3_Suspicious_failed_Windows_activity.PNG)
-
-- **ANS:** The count of activity is 35 events during this hour, "A privileged service was called, where the user account was deleted, Domain Policies were changed, A user account was created, An attempt was made to reset an accounts password, and A computer account was deleted."
+- **ANS:** There is some potential suspicious activity for failed activity between 8 a.m. and 9 a.m. on Weds, March 25th. The count of activity is 35 events during this hour, "A privileged service was called, where the user account was deleted, Domain Policies were changed, A user account was created, An attempt was made to reset an accounts password, and A computer account was deleted."
 
 Would your alert be triggered for this activity?
 
-- **ANS:** Yes, it would have alerted the SOC Analyst of the suspicious logons. 
-
+- **ANS:** Yes, it would have alerted the SOC Analyst of the suspicious logons-failed. 
 
 After reviewing, would you change your threshold from what you you previously selected?
 
-- **ANS:** No, it is set appropriately for the hourly settings, it would have also triggered an alert for the activity for the second hour from 12 p.m. to 1 p.m. on the same day.
+- **ANS:** No, it is set appropriately for the hourly settings.
 
                 
    
@@ -90,63 +85,75 @@ Did you detect a suspicious volume of successful logons?
 
 If so, what was the count of events in the hour(s) it occurred? Who is the primary user logging in? When did it occur?
 
-![Alert_Anaylsis_for_Successful_Logons](/Images/Part_1-Activity/P1_Alert_Signatures_with_successfully_logged_on.PNG)
+![Alert_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Alert_2.png)
+![Suspicious_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Suspicious_2.png)
+![User_J](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/User_J.png)
 
-- **ANS:** There is some potential suspicious activity for failed activity at 11 a.m and 12 p.m. on Weds, March 25th.
-
-![Account_was_Successfully_Logged_ON](/Images/Attack_Logs/P2-4_suspicious_volume_of_successful_logons.PNG)
-
-- **ANS:** The count of activity is 196 at 11 a.m. and 77 at 12 p.m. The primary user logging in is `user j`.
-
-![User_J](/Images/Attack_Logs/P2-4-a_suspicious_volume_of_successful_logons_user_j.PNG)
-
+- **ANS:** There is some potential suspicious activity for failed activity at 11 a.m and 12 p.m. on Weds, March 25th. The count of activity is 196 at 11 a.m. and 77 at 12 p.m. The primary user logging in is `user j`.
 
 Would your alert be triggered for this activity?
 
-- **ANS:**
+- **ANS:** Yes, it would have alerted the SOC Analyst of the suspicious logons. 
 
 After reviewing, would you change your threshold from what you you previously selected?
 
-- **ANS:**
-
-
+- **ANS:** No, it is set appropriately for the hourly settings, it would have also triggered an alert for the activity for the second hour from 12 p.m. to 1 p.m. on the same day.
 
 
 #### Alert Analysis for Deleted Accounts
 
 Did you detect a suspicious volume of deleted accounts?  
 
-![Alert_a_user_account_was_deleted](/Images/Part_1-Activity/P1_Alert_a_user_account_was_deleted.PNG)  
+![Alert_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Alert_3.png)  
+
+![Suspicious_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Suspicious_3.png)  
 
 - **ANS:** There was no suspicious activity of deleted accounts.
 
-![Suspicious_volume_of_deleted_accounts](/Images/Attack_Logs/P2-5_suspicious_volume_of_deleted_accounts.PNG)  
 
+   
+---
 
 
 #### Dashboard Analysis for Time Chart of Signatures
 
 - Does anything stand out as suspicious? What signatures stand out?
 
-  - **ANS:** Yes, the signatures that have suspicious activity are: An attempt was made to reset a users password (39.955%), A user account was locked out (34.003%), and An account was successfully logged on (8.111%).
+  - **ANS:** Yes, the signatures that have suspicious activity are: an attempt was made to reset a users password (39.955%), a user account was locked out (34.003%), and an account was successfully logged on (8.111%).
 
 `Before Windows Server Attack Dashboard`
 
-![Windows_Server_Monitoring_DashBoard](/Images/Part_1-Activity/P1_Windows_Server_Monitoring_DashBoard.PNG)
-![Windows_Server_Monitoring_DashBoard-2](/Images/Part_1-Activity/P1_Windows_Server_Monitoring_DashBoard-2.PNG)
+![Dashboard_V_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_1.png)
+![Dashboard_V_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_2.png)
+![Dashboard_V_3](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_3.png)
+
 
 `Dashboad after the Windows Server Attack`
-![Windows_Server_Monitoring_DashBoard_attacks_on_the_server](/Images/Part_2-Activity/P2_Windows_Server_Monitoring_DashBoard_attacks_on_the_server.PNG)
-![Windows_Server_Monitoring_DashBoard_attacks_on_the_server-2](/Images/Part_2-Activity/P2_Windows_Server_Monitoring_DashBoard_attacks_on_the_server-2.PNG)
+
+
+![Dashboard_V_7](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_7.png)
+![Dashboard_V_8](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_8.png)
+![Dashboard_V_9](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_9.png)
 
 - What time did it start and stop for each signature? What is the peak count of the different signatures?
 
+![Suspicious_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Suspicious_4.png)
+
   **ANS:** 
-  - `A user account was locked out:` Started around `1 a.m. and ended at 3 a.m. on March 25th.` The peak count was `896`, and the total for the two hours was `(805 + 896 = 1701).`
-  - `An attempt was made to reset a users password:` Started around `9 a.m. and ended at 11 a.m. on March 25th.` The peak count was `1,258`, and the total for the two hours was `(1258 + 761 = 2019)`.  
+
+![805](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/805.png)
+![896](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/896.png)
+- `A user account was locked out:` Started around `1 a.m. and ended at 3 a.m. on March 25th.` The peak count was `896`, and the total for the two hours was `(805 + 896 = 1701).`
+
+![1258](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/1258.png)
+![761](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/761.png)
+  - `An attempt was made to reset a users password:` Started around `9 a.m. and ended at 11 a.m. on March 25th.` The peak count was `1,258`, and the total for the two hours was `(1258 + 761 = 2019)`.
+
+![196](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/196.png)
+![77](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/77.png) 
   - `The account was successfully logged on:` Started around `11 a.m. and ended at 1 p.m. on March 25th.` The peak count was `196`, and the total for the two hours was `(196 + 77 = 273)`.  
 
-![Dashboard_Signatures_attacks_logd](/Images/Attack_Logs/P2-1_Dashboard_Signatures_attacks_logd.PNG)
+
 
  #### Dashboard Analysis for Users
 
@@ -157,8 +164,20 @@ Did you detect a suspicious volume of deleted accounts?
 - What time did it begin and stop for each user? What is the peak count of the different user?
 
   **ANS:** 
+  
+![Dashboard_Users_attacks_logd](/Images/Attack_Logs/P2-1_Dashboard_Users_attacks_logd.PNG)
+![Dashboard_Users_attacks_logd](/Images/Attack_Logs/P2-1_Dashboard_Users_attacks_logd.PNG)
+
   - `User A:` Started around `1 a.m. and ended at 3 a.m. on March 25th.` Peak count was `984`, and the total for the two hours was `(799 + 984 = 1783)`.
-  - `User K:` Started around `9 a.m. and ended at 11 AM on March 25th.` Peak count was `1,256`, and the total for the two hours was `(1256 + 761 = 2017)`.  
+
+![Dashboard_Users_attacks_logd](/Images/Attack_Logs/P2-1_Dashboard_Users_attacks_logd.PNG)
+![Dashboard_Users_attacks_logd](/Images/Attack_Logs/P2-1_Dashboard_Users_attacks_logd.PNG)
+
+  - `User K:` Started around `9 a.m. and ended at 11 AM on March 25th.` Peak count was `1,256`, and the total for the two hours was `(1256 + 761 = 2017)`. 
+
+![Dashboard_Users_attacks_logd](/Images/Attack_Logs/P2-1_Dashboard_Users_attacks_logd.PNG)
+![Dashboard_Users_attacks_logd](/Images/Attack_Logs/P2-1_Dashboard_Users_attacks_logd.PNG)
+
   - `User J:` Started around `11 a.m. and ended at 1 p.m. on March 25th.` Peak count was `196`, and the total for the two hours was `(196 + 82 = 278)`.  
 
 ![Dashboard_Users_attacks_logd](/Images/Attack_Logs/P2-1_Dashboard_Users_attacks_logd.PNG)
@@ -174,6 +193,7 @@ Did you detect a suspicious volume of deleted accounts?
   
   - **ANS:** All Charts are showing the same information as above for the Signatures.
 			
+
 #### Dashboard Analysis for Users with Bar, Graph, Pie Charts
 
 - Does anything stand out as suspicious?
@@ -183,6 +203,7 @@ Did you detect a suspicious volume of deleted accounts?
 - Do the results match your findings in your time chart for users?
 
   - **ANS:** All Charts are showing the same information as above for the Users.
+
 
 #### Dashboard Analysis for Users with Statistical Chart   
 
@@ -228,7 +249,11 @@ Did you detect a suspicious volume of deleted accounts?
 ![Report_the_count_of_the_HTTP_response_codes](/Images/Part_2-Activity/P2_Report_the_count_of_the_HTTP_response_codes.PNG)  
 ![Report_the_count_of_the_HTTP_response_codes_attack_logs](/Images/Part_2-Activity/P2_Report_the_count_of_the_HTTP_response_codes_attack_logs.PNG)
     
+
+
 ---
+
+
 #### Alert Analysis for International Activity
 
 - Did you detect any suspicious volume of international activity? If so what was the count of the hour it occurred in?
@@ -254,7 +279,11 @@ Did you detect a suspicious volume of deleted accounts?
 
 ![Alert_baseline_and_threshold_for_hourly_count_of_the_HTTP_POST_method](/Images/Part_2-Activity/P2_Alert_baseline_and_threshold_for_hourly_count_of_the_HTTP_POST_method.PNG)  
 
+
+
 ---
+
+
 
 #### Dashboard Analysis for Time Chart of HTTP Methods
   
