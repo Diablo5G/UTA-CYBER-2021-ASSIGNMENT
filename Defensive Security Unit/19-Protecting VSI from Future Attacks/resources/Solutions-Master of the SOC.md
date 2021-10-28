@@ -198,7 +198,7 @@ source="windows_server_logs.csv" signature_id=4726 | stats count as total
 ![Radial Gauge_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Radial%20Gauge_1.png)
 
    - Select the following: **Save As** > **Existing Dashboard Panel** > **Visualizations Windows Server Monitoring** > **Save to Dashboard**
-   - On our dashboard, add the ability to change the time range for all your visualizations.
+   - On our dashboard, 
 
 ![Dashboard_V_1](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_1.png)
 ![Dashboard_V_2](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_2.png)
@@ -381,7 +381,7 @@ source="apache_logs.txt" method=GET | stats count as total
    - On our dashboard, add the ability to change the time range for all your visualizations.
 
 	
-On your dashboard, add the ability to change the time range for all your visualizations.  
+On our dashboard,  
 
 ![Dashboard_V_4](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_4.png)
 ![Dashboard_V_5](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Dashboard_V_5.png)
