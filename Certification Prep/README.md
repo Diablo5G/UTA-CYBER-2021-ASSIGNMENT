@@ -12,10 +12,10 @@ While Security+, CEH, and CISSP are some of the most popular certifications, the
 
 - Splunk Core Certified User
 
-    -  Cost for Training: Free for Splunk 7.x Fundamentals Part 1 (eLearning)
+    -  Cost for Training: Free for Splunk 7.x Fundamentals Part 1 (eLearning) newer version [Splunk 8.2 Fundamentals Part 1](https://education.splunk.com/instructor-led-training/splunk-82-fundamentals-part-1)
     -  Cost for Examination: $100 exam
     -  [Free video eLearning!](https://education.splunk.com/single-subject-courses?blurbName=trainingSide&showTitle=false)
-    -  [Registration](https://login.splunk.com/)
+    -  [Sign Up](https://www.splunk.com/page/sign_up)
     -  https://www.splunk.com/en_us/training/courses/splunk-fundamentals-1.html
     -  [Proof of Completion](https://education.splunk.com/award/completion/25f157b3-df6d-3f8a-9e70-c0204840cf03/view-ext)
     -  [Splunk Education Student Handbook - v. 10.22.2021](Splunk Education pdf)
@@ -23,9 +23,9 @@ While Security+, CEH, and CISSP are some of the most popular certifications, the
 **Notes:** The courses above are listed in recommended order. They can be mixed and matched or followed as shown via either of the learning paths.These courses replace the Advanced Power User courses. If you started your journey with the Fundamentals courses and are looking for next steps, [click here](https://education.splunk.com/static/resources/Transitioning-to-Single-Subject-Courses-Mapping.pdf).
 
 
-**Course Objectives**
+### Course Objectives
  
-Module 1 – Introduction
+**Module 1** – Introduction
 Overview of Buttercup Games Inc.
  
 Module 2 – What is Splunk?
@@ -102,13 +102,25 @@ Create an instant pivot from a search
 Add a pivot report to a dashboard
 
 
-- [Splunk Core Certified Power User](https://www.paloaltonetworks.com/services/education/certification#pccsa)
 
-    - Cost: Free training, $100 exam
-    -  [More information](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/pccsa-faq.pdf)
+---
+
+<img align="center" width="550" height="150" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/19-Protecting%20VSI%20from%20Future%20Attacks/Images/Splunk_logo.png">
+
+---
+
+- Splunk Core Certified Power User
+
+    - Cost for training, $2,000 
+    - Cost for Examination,  $125
     - Certification title
     - Issuing organization
     - Description of certification
     - Why you are interested in this certification.
     - Summary of what was learned during your training.
+    - Splunk 7.x Fundamentals Part 2 version, this course is being deprecated. Ability to register for this course will end on October 25th, with access ending on November 30th.
+    - Splunk Fundamentals 2 : As of Oct. 25, 2021, Splunk Education has replaced this course with the new [Single-Subject Courses](https://education.splunk.com/single-subject-courses). It replace with newer version of Splunk 8.2 Fundamentals Part 2 https://education.splunk.com/instructor-led-training/splunk-82-fundamentals-part-2
+        - This course picks up where Splunk Fundamentals Part 1 leaves off, focusing on more advanced searching and reporting commands as well as on the creation of knowledge objects. Scenario-based examples and hands-on challenges coach you step-by-step through the creation of complex searches, reports, and charts. Major topics include using transforming commands and visualizations, filtering and formatting results, correlating events, creating knowledge objects, using field aliases and calculated fields, creating tags and event types, using macros, creating workflow actions and data models, and normalizing data with the Common Interface Model (CIM). 
+        - **Prerequisites**: Splunk Fundamentals 1
+
 
