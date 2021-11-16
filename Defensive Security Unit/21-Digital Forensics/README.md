@@ -56,15 +56,13 @@ You've examined and documented quite a bit of information from the iPhone image 
 
    - When including pictures from the iPhone, please use the time stamp of the **Created time** from autopsy. 
 
- ### Submission File
 
- - Solutions-Digital Forensics()
 
 ----
 
-### Submission Guidelines  
+### Submission File
 
-- Submit the completed [Google Sheets: Russian Team Room](https://docs.google.com/spreadsheets/d/1GeibalvCi0jnUKay82dSne9V9kdEuUNyOxpaAEBABiU/edit#gid=0)  file.
+ - [Solutions Digital Forensics](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/21-Digital%20Forensics/Resources/Solutions-Digital%20Forensics.md)
 
 ----
 
