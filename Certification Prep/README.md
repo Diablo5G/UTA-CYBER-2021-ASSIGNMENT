@@ -1,103 +1,114 @@
-## Week 22 Homework: Certification Prep
+<img align="center" width="2200" height="400" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Defensive%20Security%20Unit/21-Digital%20Forensics/Images/iphone11widefront-1.jpg">
 
-### Overview
+---
 
-- This week, you learned about the growing demand for information security certifications and their role in qualifying and training for job opportunities.
+# Week 22 : Certification Prep
 
-- While Security+, CEH, and CISSP are some of the most popular certifications, there are many other information security certifications and courses that are available for free or have minimal fees.
+While Security+, CEH, and CISSP are some of the most popular certifications, there are many other information security certifications and courses that are available for free or have minimal fees. I personally want to be SOC Analyst or any related in this fields so I aimed to pursue Splunk certifications, at least I hope it will land me to the jobs I expected to do. 
 
-- For this week's homework, you will complete one of these certifications.
+- For this week's homework, I'd been able to completed one of these SIEM certifications from Splunk. 
 
-- Once it is complete, you can add it to your LinkedIn and résumé. 
+### Vendor-Specific Certifications  
 
-### List of Certifications
+- Splunk Core Certified User
 
-Review the below list of free and inexpensive certifications below. Select one certification from this list.
+    -  Cost for Training: Free for Splunk 7.x Fundamentals Part 1 (eLearning)
+    -  Cost for Examination: $100 exam
+    -  [Free video eLearning!](https://education.splunk.com/single-subject-courses?blurbName=trainingSide&showTitle=false)
+    -  [Registration](https://login.splunk.com/)
+    -  https://www.splunk.com/en_us/training/courses/splunk-fundamentals-1.html
+    -  [Proof of Completion](https://education.splunk.com/award/completion/25f157b3-df6d-3f8a-9e70-c0204840cf03/view-ext)
+    -  [Splunk Education Student Handbook - v. 10.22.2021](Splunk Education pdf)
 
-
-#### Cloud Certifications
-
-- [Microsoft Azure Fundamentals](https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/?tab=tab-learning-paths)
-    - Cost: Free training, free exam
-
-- [AWS Security Fundamentals](https://www.aws.training/Details/eLearning?id=34259)
-   - Cost: Free training, $300 exam
-
-- [Cloud Computing Basics](https://www.coursera.org/learn/cloud-computing-basics)
-   - Cost: Free training, free exam
-  
-
-#### Vulnerability Management
-
-- [Qualys](https://www.qualys.com/training/course/vulnerability-management/)
-
-    - Cost: Free training
-
-- [Nessus](https://university.tenable.com/learn/course/25/nessus-scanning)
-
-    - Cost: Free training
-
-    - Note: You will need to create an account and then search for the course in order to access the free training. 
+**Notes:** The courses above are listed in recommended order. They can be mixed and matched or followed as shown via either of the learning paths.These courses replace the Advanced Power User courses. If you started your journey with the Fundamentals courses and are looking for next steps, [click here](https://education.splunk.com/static/resources/Transitioning-to-Single-Subject-Courses-Mapping.pdf).
 
 
-#### Vendor-Specific Certifications
+**Course Objectives**
+ 
+Module 1 – Introduction
+Overview of Buttercup Games Inc.
+ 
+Module 2 – What is Splunk?
+Splunk components
+Installing Splunk
+Getting data into Splunk
+ 
+Module 3 – Introduction to Splunk's User Interface
+Understand the uses of Splunk
+Define Splunk Apps
+Customizing your user settings
+Learn basic navigation in Splunk
+ 
+Module 4 – Basic Searching
+Run basic searches
+Use autocomplete to help build a search
+Set the time range of a search
+Identify the contents of search results
+Refine searches
+Use the timeline
+Work with events
+Control a search job
+Save search results
+ 
+Module 5 – Using Fields in Searches
+Understand fields
+Use fields in searches
+Use the fields sidebar
+ 
+Module 6 – Search Language Fundamentals
+Review basic search commands and general search practices
+Examine the search pipeline
+Specify indexes in searches
+Use autocomplete and syntax highlighting
+Use SPL search commands to perform searches:
+ 
+Module 7 – Using Basic Transforming Commands
+The top command
+The rare command
+The stats command
+ 
+Module 8 – Creating Reports and Dashboards
+Save a search as a report
+Edit reports
+Create reports that include visualizations such as charts
+and tables
+Create a dashboard
+Add a report to a dashboard
+Edit a dashboard
+ 
+Module 9 – Datasets and the Common Information Model
+Naming conventions
+What are datasets?
+What is the Common Information Model (CIM)?
+ 
+Module 10 – Creating and Using Lookups
+Describe lookups 
+Create a lookup file and create a lookup definition
+Configure an automatic lookup
+ 
+Module 11 – Creating Scheduled Reports and Alerts
+Describe scheduled reports
+Configure scheduled reports
+Describe alerts
+Create alerts
+View fired alerts
+ 
+Module 12 - Using Pivot
+Describe Pivot
+Understand the relationship between data models and pivot
+Select a data model object
+Create a pivot report
+Create an instant pivot from a search
+Add a pivot report to a dashboard
 
-- [Palo Alto Networks Certified Cybersecurity Associate (PCCSA)](https://www.paloaltonetworks.com/services/education/certification#pccsa)
+
+- [Splunk Core Certified Power User](https://www.paloaltonetworks.com/services/education/certification#pccsa)
 
     - Cost: Free training, $100 exam
     -  [More information](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/pccsa-faq.pdf)
-
-
-#### Homeland Security Cyber Courses
-
-All of the following courses are free: 
-
-- The following courses are accessible through the following link: [Training Available Through CISA](https://us-cert.cisa.gov/ics/Training-Available-Through-ICS-CERT)
-
-    - Attack Methodologies in IT & ICS (210W-9)
-
-    - Industrial Control Systems Cybersecurity Landscape for Managers (FRE2115)
-
-    - Cybersecurity within IT & ICS Domains (210W-4)
-
-
-### Instructions 
-
-1. After selecting a course of certification, research the topics that are covered.
-
-
-2. If possible, complete the steps to acquire the certification. If you are unable to complete the certification before the due date, don't worry! You will still be abe to complete this homework. 
-
-
-3. Complete either **Option 1** or **Option 2**.
-
-
-    - **Option 1**: If you are able to complete your certification before the homework due date, submit a screen shot that shows proof of completion.
-        
-    - **Option 2**: You may be unable to complete your certification before the due date for a number of reasons, such as:
-        - It takes longer than three hours to complete.
-        - Completion requires several courses.
-        - No formal certification is awarded. 
-
-    If any of these are the case, complete three hours of training towards your selected certification and submit a one page summary that includes:
-        - Certification title
-        - Issuing organization
-        - Description of certification
-        - Why you are interested in this certification.
-        - Summary of what was learned during your training.
-
-
-### Submission Guidelines
-
-- **Option 1**: Submit a screen shot that shows proof of completion.
-
-- **Option 2**: Submit a one page summary that includes:
     - Certification title
     - Issuing organization
     - Description of certification
     - Why you are interested in this certification.
     - Summary of what was learned during your training.
 
-
----
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
