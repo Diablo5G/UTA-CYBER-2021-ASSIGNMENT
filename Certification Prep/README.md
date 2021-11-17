@@ -153,12 +153,10 @@ It's very useful information inside and can be exhausted to finish it if you hav
   [Quizlet-For eLearning3](https://quizlet.com/256985694/comparison-operators-in-splunk-flash-cards/) | 
   [Quizlet-For eLearning4](https://quizlet.com/333249809/splunk-fundamentals-1-module-quizzes-final-quiz-flash-cards/) 
 
-> :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk_Examdumps.SPLK-1001.pdf) too easy :smiling_imp: let's decode it (code dat below), base64-encoded string by [CyberChef](https://0x1.gitlab.io/code/CyberChef/) or :angel: email me to unlock it 
+> :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk_Examdumps.SPLK-1001.pdf) too easy :smiling_imp: let's decode it (code dat below), one of Cipher by [CyberChef](https://0x1.gitlab.io/code/CyberChef/) or :angel: email me to unlock it 
 
 ```
-100100011100100 0111000000100011000110100011011000000011 001010110110000 10010001110100010001 011100001100101 0100010001 
-
-1000101110!0100100010011011000000100100111000100100100001001
+10001 01110 01001 00010 01101 10000 00100 10011 10001 00100 10000
 ```
 
 > :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/SPLK-1001.pdf) same password from pdf above
