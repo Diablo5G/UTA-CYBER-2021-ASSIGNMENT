@@ -22,26 +22,36 @@ Splunk skills is a desireable qualification for many infosec positions. For exam
 
 For this week's homework, I will share a guide list of resources on how to pass basic Splunk certification. I'd been able to complete one of these SIEM certifications from Splunk the last two months ago.  
 
-## Vendor-Specific Certifications - Splunk Core Certified User
 
- - Cost for Training: Free for [Splunk 7.x Fundamentals Part 1](https://www.splunk.com/en_us/training/courses/splunk-fundamentals-1.html) (eLearning) newer version [Splunk 8.2 Fundamentals Part 1](https://education.splunk.com/instructor-led-training/splunk-82-fundamentals-part-1)
+
+
+## Vendor-Specific Certifications - Splunk Core Certified User
+---
+
+ - Cost for Training: **Free** [Splunk 7.x Fundamentals Part 1](https://www.splunk.com/en_us/training/courses/splunk-fundamentals-1.html) (eLearning) newer version [Splunk 8.2 Fundamentals Part 1](https://education.splunk.com/instructor-led-training/splunk-82-fundamentals-part-1)
 
 ![Training](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/proof%20of%20completion_2.png)
 
 
- - Cost for Exam: $125 exam
- - Splunk Fundamentals 1: As of Oct. 25, 2021, Splunk Education has replaced this course with the new [Splunk Single-Subject Courses](https://education.splunk.com/single-subject-courses?blurbName=trainingSide&showTitle=false)
+ - Cost for Exam: $125
+ - Splunk Fundamentals 1: As of Oct. 25, 2021, Splunk Education has replaced this course with the new [Splunk Single-Subject Courses](https://education.splunk.com/single-subject-courses?blurbName=trainingSide&showTitle=false) and this is a completely self-paced eLearning. You can attend this trining anytime in your own pace and from any location. These self-paced courses include videos and hands-on labs.
  - Set up a Splunk account: [Splunk Sign Up Page](https://www.splunk.com/page/sign_up)
- - [Splunk Education Student Handbook - v. 10.22.2021](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk-Education-Student-Handbook.pdf)
- - [Splunk: Certification Study Guide](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk-Certification-Exams-Study-Guide.pdf)  
+ - Where do I start? Great question! you can most answer about Splunk certification from this [Splunk Education Student Handbook - v. 10.22.2021](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk-Education-Student-Handbook.pdf) including Learning Path.
+ - Want to take a look to sample questions then click [Splunk: Certification Study Guide](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk-Certification-Exams-Study-Guide.pdf) but do not underestimate them, I will put more resources where to get more practice for exam prep in the next part.  
 
 **Notes:** The courses above are listed in recommended order. They can be mixed and matched or followed as shown via either of the learning paths.These courses replace the Advanced Power User courses. If you started your journey with the Fundamentals courses and are looking for next steps, [Transitioning to Single-Subject Courses Mapping](https://education.splunk.com/static/resources/Transitioning-to-Single-Subject-Courses-Mapping.pdf).
 
 
 ![Splunk Education](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Journey.png)
 
+![MultiSubjectCourses](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/MultiSubjectCourses.png)
 
-### What to expect in the Splunk 7.x Fundamentals Part 1
+
+
+
+
+
+## What to expect in the Splunk 7.x Fundamentals Part 1
 ---
 
 <img align="center" width="2600" height="350" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Top.png">
@@ -124,16 +134,36 @@ For this week's homework, I will share a guide list of resources on how to pass 
   -  Add a pivot report to a dashboard
 
 
+In each module are contains contents, hands-on labs, and a module quiz, yes you need to pass the quiz before getting to the next module til complete 12 of them.
+
+![QuizSample](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/QuizSample.png)
 
 
-
- - [Proof of Completion of Training](https://education.splunk.com/award/completion/25f157b3-df6d-3f8a-9e70-c0204840cf03/view-ext)
- - [Proof of Completion of Training](https://education.splunk.com/award/completion/25f157b3-df6d-3f8a-9e70-c0204840cf03/view-ext)
- - [Proof of Completion of Training](https://education.splunk.com/award/completion/25f157b3-df6d-3f8a-9e70-c0204840cf03/view-ext)
- - [Proof of Completion of Training](https://education.splunk.com/award/completion/25f157b3-df6d-3f8a-9e70-c0204840cf03/view-ext)
 
 ![Proof of Completion of Training](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/eLearning%20Completed.png)
 
+After you're complete self-paced eLearning of Splunk Fundamentals Part 1, you will get 234 pages PDF file for more study. 
+It's very useful information inside and can be exhausted to finish it if you have a limited time before attempting the test. :cold_sweat: Splunk allows you to postpone if you feel like you're not ready for it. Trust me! read every single page of this PDF and try to remember it (below screenshot is an example of pdf). 
+
+![234pages](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Splunk%207.x%20Fundamentals%20Part%201%20(eLearning).png)
+
+**Resource{ful}:** 
+> Quiz Answer Key [Quizlet-For eLearning1](https://quizlet.com/521455710/splunk-fundamentals-flash-cards/) | 
+  [Quizlet-For eLearning2](https://quizlet.com/289545494/splunk-flash-cards/) | 
+  [Quizlet-For eLearning3](https://quizlet.com/256985694/comparison-operators-in-splunk-flash-cards/) | 
+  [Quizlet-For eLearning4](https://quizlet.com/333249809/splunk-fundamentals-1-module-quizzes-final-quiz-flash-cards/) 
+
+> :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk_Examdumps.SPLK-1001.pdf) too easy :smiling_imp: let's decode it (code dat below), one of Cipher by [CyberChef](https://0x1.gitlab.io/code/CyberChef/) or :angel: email me to unlock it 
+
+```
+10001 01110 01001 00010 01101 10000 00100 10011 10001 00100 10000
+```
+
+> :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/SPLK-1001.pdf) same password from pdf above
+
+> :closed_lock_with_key:[Multiple choice]( https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/SplunkFundamentals.pdf) same password from pdf above
+
+> More Free Practice [1](https://pegacert.com/vendor/splunk/splk-1001) | [2](https://www.examtopics.com/exams/splunk/splk-1001/view/)
 
 
 
@@ -141,6 +171,7 @@ For this week's homework, I will share a guide list of resources on how to pass 
 
 ## Ready for Exam?   
 ---
+
 -  A step-by-step guide to getting registered for Splunk Certification exams [Exam Registration Tutorial](Exam-Registration-Tutorial.pdf) | [Pearson VUE](https://home.pearsonvue.com/splunk) 
 
 -  6 Authorization to Test Emails from Pearson VUE sent to you after the registration completed for the test taker
@@ -156,20 +187,25 @@ For this week's homework, I will share a guide list of resources on how to pass 
 
 ![AuthorizeToTest](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Authorization%20to%20Test.png)
 
-
+-  Select the test date (2 months should be fine) and pay for the exam fee. 
+-  Now it's time to study. No one cares about your efforts, only the results. 
+-  The day before attempting the test, make sure you have plenty of sleep time (8hours), singing your fav songs in the car while you drive to the test center help you to relax (works for me at least)
+-  Finally, FIGHTING!! :fist: :v:  
 
 ---
+
+
 
 
 
 ## Proof of Completion  
----
+
 
 At the test center, you will know your pass score immediately once you click submit button (terrifying moment) and also provide you the printout paper of your passing score before you leave the test center.
 
-- You will get email from PearsonVUE
+- You will also get email from PearsonVUE, you will be prompted to sign in before viewing your score report on website and be able to download certification in PDF format form.
 
-- You can request digital badge for your own personal acclaim for many Industry e.g. Cisco, Microsoft, Splunk, CompTIA etc. at [[Digital Credentials - Credly](https://www.credly.com/)
+- You can request digital badge for your own personal acclaim for many industries e.g. Cisco, Microsoft, Splunk, CompTIA etc. at [Digital Credentials - Credly](https://www.credly.com/)
 
 
 ![MyActiveCert](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Active%20Certification.png)
@@ -180,14 +216,14 @@ At the test center, you will know your pass score immediately once you click sub
 
 ---
 
-> Would be enough for just "Splunk Core Certified User" certification to achieve a dream job?
+> Would be enough for just "Splunk Core Certified User" certification to achieve a job?
 > The answer is NO! We cannot aim high - shoot low then what's next? I register with Pearson VUE for the next certified **"Splunk Core Certified Power User"** describes in the part 2 [Splunk Core Certified Power User](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Part2.md)
 
 ---
 
 ### Splunk References:
 
-- Official Splunk:   [Website](https://www.splunk.com/)
+- Official Splunk Website:   [Website](https://www.splunk.com/)
 - Splunk GitHub:     [GitHub](https://github.com/splunk)
 - Splunk Dev:        [Dev](https://dev.splunk.com/)
 - Splunk Chat Groups:[Slack Chat](https://docs.splunk.com/Documentation/Community/current/community/Chat#Join_us_on_Slack)
