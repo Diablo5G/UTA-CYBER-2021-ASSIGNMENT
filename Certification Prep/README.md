@@ -143,7 +143,7 @@ In each module are contains contents, hands-on labs, and a module quiz, yes you 
 ![Proof of Completion of Training](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/eLearning%20Completed.png)
 
 After you're complete self-paced eLearning of Splunk Fundamentals Part 1, you will get 234 pages PDF file for more study. 
-It's very useful information inside and can be exhausted to finish it if you have a limited time before attempting the test. :cold_sweat: Splunk allows you to postpone if you feel like you're not ready for it. Trust me! read every single page of this PDF and try to remember it. 
+It's very useful information inside and can be exhausted to finish it if you have a limited time before attempting the test. :cold_sweat: Splunk allows you to postpone if you feel like you're not ready for it. Trust me! read every single page of this PDF and try to remember it (below screenshot is an example of pdf). 
 
 ![234pages](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Splunk%207.x%20Fundamentals%20Part%201%20(eLearning).png)
 
@@ -165,9 +165,7 @@ It's very useful information inside and can be exhausted to finish it if you hav
 
 > :closed_lock_with_key:[Multiple choice]( https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/SplunkFundamentals.pdf) same password from pdf above
 
-> [Free Practice_1](https://pegacert.com/vendor/splunk/splk-1001) | [Free Practice_2](https://www.examtopics.com/exams/splunk/splk-1001/view/)
-
-
+> More Free Practice [1](https://pegacert.com/vendor/splunk/splk-1001) | [2](https://www.examtopics.com/exams/splunk/splk-1001/view/)
 
 
 
@@ -191,7 +189,10 @@ It's very useful information inside and can be exhausted to finish it if you hav
 
 ![AuthorizeToTest](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Authorization%20to%20Test.png)
 
--  RSVP the date and do payment for exam
+-  Select the test date (2 months should be fine) and pay for the exam fee. 
+-  Now it's time to study. No one cares about your efforts, only the results. 
+-  The day before attempting the test, make sure you have plenty of sleep time (8hours), singing your fav songs in the car while you drive to the test center help you to relax (works for me at least)
+-  Finally, FIGHTING!! :fist: :v:  
 
 ---
 
@@ -204,9 +205,9 @@ It's very useful information inside and can be exhausted to finish it if you hav
 
 At the test center, you will know your pass score immediately once you click submit button (terrifying moment) and also provide you the printout paper of your passing score before you leave the test center.
 
-- You will get email from PearsonVUE
+- You will also get email from PearsonVUE, you will be prompted to sign in before viewing your score report on website and be able to download certification in PDF format form.
 
-- You can request digital badge for your own personal acclaim for many Industry e.g. Cisco, Microsoft, Splunk, CompTIA etc. at [[Digital Credentials - Credly](https://www.credly.com/)
+- You can request digital badge for your own personal acclaim for many industries e.g. Cisco, Microsoft, Splunk, CompTIA etc. at [Digital Credentials - Credly](https://www.credly.com/)
 
 
 ![MyActiveCert](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Active%20Certification.png)
