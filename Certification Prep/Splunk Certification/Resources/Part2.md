@@ -21,4 +21,13 @@
        
     - **Prerequisites: Splunk Fundamentals 1**
 
+## Continuing your Splunk Education
+Free Splunk Advanced Monitoring Tools Training
 
+If you are interested in taking free elearning courses on Splunk's Advanced monitoring tools, feel free to take any of the following elearning courses:
+   - [SOAR Automation Broker Walkthrough](https://education.splunk.com/course/soar-automation-broker-walk-through)
+   - [Splunk User Behavior Analytics](https://education.splunk.com/course/splunk-user-behavior-analytics-elearning)
+   - [Phantom - Analyst Queue Walkthrough](https://education.splunk.com/elearning/phantom---analyst-queue-walkthrough)
+   - [UBA SOC Analyst Walkthrough](https://education.splunk.com/elearning/uba-soc-analyst-walkthrough)
+
+---
