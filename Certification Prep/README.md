@@ -138,6 +138,7 @@ In each module are contains contents, hands-on labs, and a module quiz, yes you 
 
 ![QuizSample](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/QuizSample.png)
 
+Mock Labs, Splunk will allow you to download and use free trial of Splunk Enterprise with Power Role to practice hands-on labs environment (10 total mods). Splunk comes with a 60 day trial license by default, good for 500MB of indexing per day. If you need to extend your license, or need more volume per day, you can contact sales@splunk.com and ask for another (larger, or longer) trial license.
 
 
 ![Proof of Completion of Training](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/eLearning%20Completed.png)
@@ -153,15 +154,17 @@ It's very useful information inside and can be exhausted to finish it if you hav
   [Quizlet-For eLearning3](https://quizlet.com/256985694/comparison-operators-in-splunk-flash-cards/) | 
   [Quizlet-For eLearning4](https://quizlet.com/333249809/splunk-fundamentals-1-module-quizzes-final-quiz-flash-cards/) 
 
-> :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk_Examdumps.SPLK-1001.pdf) too easy :smiling_imp: let's decode it (code dat below), one of Cipher by [CyberChef](https://0x1.gitlab.io/code/CyberChef/) or :angel: email me to unlock it 
+> :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk_Examdumps.SPLK-1001.pdf) too easy :smiling_imp: let's decode it (code below), one of Cipher by [CyberChef](https://0x1.gitlab.io/code/CyberChef/) or :angel: email me to unlock it 
 
 ```
 10001 01110 01001 00010 01101 10000 00100 10011 10001 00100 10000
 ```
 
-> :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/SPLK-1001.pdf) same password from pdf above
+> :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/SPLK-1001.pdf) same password above
 
-> :closed_lock_with_key:[Multiple choice]( https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/SplunkFundamentals.pdf) same password from pdf above
+> :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/SplunkFundamentals.pdf) same password above
+
+> :closed_lock_with_key:[screenshots](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk%207.x%20Fundamental%20Quiz.pdf) same password above
 
 > More Free Practice [1](https://pegacert.com/vendor/splunk/splk-1001) | [2](https://www.examtopics.com/exams/splunk/splk-1001/view/)
 
@@ -229,6 +232,7 @@ At the test center, you will know your pass score immediately once you click sub
 - Splunk Chat Groups:[Slack Chat](https://docs.splunk.com/Documentation/Community/current/community/Chat#Join_us_on_Slack)
 - Splunk Reddit:     [Reddit](https://www.reddit.com/r/Splunk/)
 - Splunk Community:  [Splunk-search](https://community.splunk.com/t5/Splunk-Search/bd-p/splunk-search)
+- Splunk Quick-Reference-Guide: [CheatSheet](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/splunk-quick-reference-guide.pdf)
 
 #### Special thanks:
 © Trilogy Education Services, a 2U, Inc., Instructor Jerry Arnold and TAs; Matt McNew, Jansen Russell, Micheal Stephenson.
