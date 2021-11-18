@@ -154,7 +154,7 @@ It's very useful information inside and can be exhausted to finish it if you hav
   [Quizlet-For eLearning3](https://quizlet.com/256985694/comparison-operators-in-splunk-flash-cards/) | 
   [Quizlet-For eLearning4](https://quizlet.com/333249809/splunk-fundamentals-1-module-quizzes-final-quiz-flash-cards/) 
 
-> :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk_Examdumps.SPLK-1001.pdf) too easy :smiling_imp: let's decode it (code below), one of Cipher by [CyberChef](https://0x1.gitlab.io/code/CyberChef/) or :angel: email me to unlock it 
+> :closed_lock_with_key:[Multiple choice](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk_Examdumps.SPLK-1001.pdf) too easy :smiling_imp: let's decode it (code below), hint: one of Cipher or :angel: email me to unlock it 
 
 ```
 10001 01110 01001 00010 01101 10000 00100 10011 10001 00100 10000
@@ -166,7 +166,7 @@ It's very useful information inside and can be exhausted to finish it if you hav
 
 > :closed_lock_with_key:[screenshots](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Splunk%207.x%20Fundamental%20Quiz.pdf) same password above
 
-> More Free Practice [1](https://pegacert.com/vendor/splunk/splk-1001) | [2](https://www.examtopics.com/exams/splunk/splk-1001/view/)
+> More Free Practice [1](https://pegacert.com/vendor/splunk/splk-1001) | [2](https://www.examtopics.com/exams/splunk/splk-1001/view/) | [3](https://www.testpreptraining.com/) | [4](https://www.itexams.com/)
 
 
 
@@ -214,8 +214,6 @@ At the test center, you will know your pass score immediately once you click sub
 ![MyActiveCert](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Active%20Certification.png)
 
 ![Certification](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Certification%20Core.png)
-
-![Credly](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Credly%20Digital%20Badge.png)
 
 ---
 
