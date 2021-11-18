@@ -232,6 +232,7 @@ At the test center, you will know your pass score immediately once you click sub
 ### Splunk References:
 
 - Official Splunk Website:   [Website](https://www.splunk.com/)
+- Splunk Education:  [Free Splunk Education Resources](https://education.splunk.com/free)
 - Splunk GitHub:     [GitHub](https://github.com/splunk)
 - Splunk Dev:        [Dev](https://dev.splunk.com/)
 - Splunk Chat Groups:[Slack Chat](https://docs.splunk.com/Documentation/Community/current/community/Chat#Join_us_on_Slack)
