@@ -56,6 +56,10 @@ For this week's homework, I will share a guide list of resources on how to pass 
 
 <img align="center" width="2600" height="350" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Top.png">
 
+This is how your dashboard looks like, after you registered Splunk 7.x Fundamentals Part 1
+
+![Dashboard](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Training%20Dashboard.png)
+
 #### Course Objectives
  
 **Module 1** – Introduction
@@ -133,6 +137,9 @@ For this week's homework, I will share a guide list of resources on how to pass 
   -  Create an instant pivot from a search
   -  Add a pivot report to a dashboard
 
+In the video tutorials, you will meet this nice guy named Krisfer who will lead you all along in Splunk fundamentals part 1 training. He has very clear communication, a neutral tone, and a good-paced video (not too slow nor too fast).  
+
+![Krisfer](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/Krisfer%20on%20Splunk%20tutorials.png)
 
 In each module are contains contents, hands-on labs, and a module quiz, yes you need to pass the quiz before getting to the next module til complete 12 of them.
 
@@ -218,7 +225,7 @@ At the test center, you will know your pass score immediately once you click sub
 ---
 
 > Would be enough for just "Splunk Core Certified User" certification to achieve a job?
-> The answer is NO! We cannot aim high - shoot low then what's next? I register with Pearson VUE for the next certified **"Splunk Core Certified Power User"** describes in the part 2 [Splunk Core Certified Power User](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Part2.md)
+> The answer is NO! We cannot aim high - shoot low then what's next? I register with Pearson VUE for the next certified **"Splunk Core Certified Power User"** describes in the part 2 [Splunk Core Certified Power User & Advanced Power User](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Part2.md)
 
 ---
 
