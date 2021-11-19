@@ -182,7 +182,7 @@ It's very useful information inside and can be exhausted to finish it if you hav
 ## Ready for Exam?   
 ---
 
--  A step-by-step guide to getting registered for Splunk Certification exams [Exam Registration Tutorial](Exam-Registration-Tutorial.pdf) | [Pearson VUE](https://home.pearsonvue.com/splunk) 
+-  A step-by-step guide to getting registered for Splunk Certification exams [Exam Registration Tutorial](https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Resources/Exam-Registration-Tutorial.pdf) | [Pearson VUE](https://home.pearsonvue.com/splunk) 
 
 -  6 Authorization to Test Emails from Pearson VUE sent to you after the registration completed for the test taker
 
