@@ -1,5 +1,5 @@
 
-<img align="left" width="50" height="50" src="https://github.com/Diablo5G/Cyber-Cheat-Sheets/blob/Master/Images/paper-weight-500x500.jpg">
+<img align="left" width="50" height="50" src="https://github.com/Diablo5G/UTA-CYBER-2021-ASSIGNMENT/blob/Master/Certification%20Prep/Splunk%20Certification/Images/paper-weight-500x500.jpg">
 
 ---
 
